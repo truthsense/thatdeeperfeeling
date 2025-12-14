@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors - Grounded, Sensual, Sacred */
+  --primary-burgundy: #8B3A47;
+  --primary-wine: #6B2D3A;
+  --secondary-taupe: #C4B5A0;
+  --secondary-warm-beige: #D4C7B3;
+  --accent-terracotta: #E8A399;
+  --accent-coral: #D98B7F;
+  --accent-gold: #C9A86A;
+  --neutral-cream: #F5F1E8;
+  --neutral-soft-white: #FDFCF9;
+  --neutral-warm-gray: #8B8275;
+  --neutral-charcoal: #3A3530;
+
+  /* Backgrounds */
+  --background: var(--neutral-soft-white);
+  --background-secondary: var(--neutral-cream);
+  --foreground: var(--neutral-charcoal);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  /* Spacing & Layout */
+  --section-padding: 5rem;
+  --container-max-width: 1200px;
+  --content-max-width: 800px;
+}
+
+@theme inline {
+  /* Custom Tailwind Theme Extensions */
+  --color-primary-burgundy: var(--primary-burgundy);
+  --color-primary-wine: var(--primary-wine);
+  --color-secondary-taupe: var(--secondary-taupe);
+  --color-secondary-warm-beige: var(--secondary-warm-beige);
+  --color-accent-terracotta: var(--accent-terracotta);
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-gold: var(--accent-gold);
+  --color-neutral-cream: var(--neutral-cream);
+  --color-neutral-soft-white: var(--neutral-soft-white);
+  --color-neutral-warm-gray: var(--neutral-warm-gray);
+  --color-neutral-charcoal: var(--neutral-charcoal);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--primary-wine);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--neutral-charcoal);
+}
+
+a {
+  color: var(--primary-burgundy);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-terracotta);
+}
+
+/* Container & Layout */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.content-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+/* Section Spacing */
+section {
+  padding: var(--section-padding) 0;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem;
+  }
+
+  section {
+    padding: var(--section-padding) 0;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary-burgundy);
+  color: var(--neutral-soft-white);
+}
+
+.btn-primary:hover {
+  background: var(--primary-wine);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(139, 58, 71, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-burgundy);
+  border: 2px solid var(--primary-burgundy);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-burgundy);
+  color: var(--neutral-soft-white);
+}
+
+.btn-accent {
+  background: var(--accent-terracotta);
+  color: var(--neutral-soft-white);
+}
+
+.btn-accent:hover {
+  background: var(--accent-coral);
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: 3px solid var(--accent-terracotta);
+  outline-offset: 2px;
+}
+
+/* Selection Styling */
+::selection {
+  background: var(--accent-terracotta);
+  color: var(--neutral-soft-white);
+}
+
+/* Smooth Transitions */
+* {
+  transition-property: background-color, color, border-color, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
