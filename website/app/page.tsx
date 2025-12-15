@@ -7,6 +7,15 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
+      {/* Role Descriptor */}
+      <section className="role-descriptor">
+        <div className="container">
+          <p className="descriptor-text">
+            I offer private coaching and immersive containers for people reclaiming their power, desire, and embodied authority after leaving high-demand systems.
+          </p>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
@@ -17,9 +26,6 @@ export default function Home() {
                 <br />
                 <span className="gradient-text">and Surrender Meet</span>
               </h1>
-              <p className="hero-descriptor">
-                I offer private coaching and immersive containers for people reclaiming their power, desire, and embodied authority after leaving high-demand systems.
-              </p>
               <p className="hero-subtitle">
                 Guiding individuals out of spiritual codependency and back into internal peace through embodiment, Eros, and sacred interdependence.
               </p>
@@ -285,6 +291,23 @@ export default function Home() {
       </section>
 
       <style jsx>{`
+        /* Role Descriptor */
+        .role-descriptor {
+          background: var(--neutral-soft-white);
+          padding: 1.25rem 1.5rem;
+          border-bottom: 1px solid rgba(139, 58, 71, 0.08);
+        }
+
+        .descriptor-text {
+          font-size: clamp(0.9rem, 1.5vw, 1rem);
+          color: var(--neutral-charcoal);
+          text-align: center;
+          line-height: 1.5;
+          font-weight: 500;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+
         /* Hero Section */
         .hero {
           min-height: 80vh;
@@ -332,14 +355,6 @@ export default function Home() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-        }
-
-        .hero-descriptor {
-          font-size: clamp(0.95rem, 1.5vw, 1.1rem);
-          color: var(--neutral-charcoal);
-          margin-bottom: 2rem;
-          line-height: 1.6;
-          font-weight: 500;
         }
 
         .hero-subtitle {
