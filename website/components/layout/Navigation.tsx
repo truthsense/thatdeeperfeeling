@@ -9,6 +9,7 @@ export default function Navigation() {
 
   const navigationItems = [
     { label: 'Home', href: '/' },
+    { label: 'Start Here', href: '/start' },
     { label: 'About', href: '/about' },
     { label: 'Offerings', href: '/offerings' },
     { label: 'Consult', href: '/consult' },

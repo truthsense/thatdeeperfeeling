@@ -28,7 +28,7 @@ export default function Footer() {
                 <Link href="/offerings">Offerings</Link>
               </li>
               <li>
-                <Link href="/consult">Book Consultation</Link>
+                <Link href="/consult">Book a Curiosity Call</Link>
               </li>
               <li>
                 <Link href="/resources">Resources</Link>

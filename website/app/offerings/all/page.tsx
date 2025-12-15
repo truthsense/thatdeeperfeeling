@@ -280,10 +280,10 @@ export default function AllOfferingsPage() {
         <div className="container content-container centered">
           <h2>Not Sure Which Container Is Right?</h2>
           <p>
-            Book a consultation and we'll explore your goals, answer questions, and help you choose the path that feels most aligned.
+            A low-pressure space to slow down, ask questions, and feel into what's next.
           </p>
           <Button href="/consult" variant="primary">
-            Book Free Consultation
+            Book a Curiosity Call
           </Button>
         </div>
       </section>

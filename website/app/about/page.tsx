@@ -91,11 +91,11 @@ export default function AboutPage() {
         <div className="container content-container">
           <h2>My Approach</h2>
           <p className="philosophy-intro">
-            My work is rooted in three core principles: trauma-informed care, consent culture, and embodied wisdom.
+            My work is rooted in three core principles: trauma-trained care, consent culture, and embodied wisdom.
           </p>
           <div className="philosophy-grid">
             <div className="philosophy-item">
-              <h3>Trauma-Informed</h3>
+              <h3>Trauma-Trained</h3>
               <p>
                 I honor your nervous system, your pacing, and your boundaries. Healing isn't linear, and neither is pleasure. We move at the speed of safety.
               </p>
@@ -131,7 +131,7 @@ export default function AboutPage() {
               <h4>Certifications & Training</h4>
               <ul>
                 <li>Certified Somatic Intimacy Coach</li>
-                <li>Trauma-Informed Coaching Certification</li>
+                <li>Trauma-Trained Coaching (training completed)</li>
                 <li>Kink-Aware Professionals (KAP) Training</li>
                 <li>BDSM Education & Communication Specialist</li>
                 <li>Consent Culture Facilitator</li>
@@ -188,10 +188,10 @@ export default function AboutPage() {
         <div className="container content-container centered">
           <h2>Ready to Work Together?</h2>
           <p>
-            Book a free consultation to explore how we can support your journey toward deeper intimacy, embodied power, and conscious pleasure.
+            A low-pressure space to slow down, ask questions, and feel into what's next.
           </p>
           <Button href="/consult" variant="primary">
-            Schedule Your Consultation
+            Book a Curiosity Call
           </Button>
         </div>
       </section>

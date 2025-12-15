@@ -18,6 +18,9 @@ export default function Home() {
                 <span className="gradient-text">and Surrender Meet</span>
               </h1>
               <p className="hero-subtitle">
+                I offer private coaching and immersive containers for people reclaiming their power, desire, and embodied authority after leaving high-demand systems.
+              </p>
+              <p className="hero-subtitle">
                 Guiding individuals out of spiritual codependency and back into internal peace through embodiment, Eros, and sacred interdependence.
               </p>
               <p className="hero-subtitle">
@@ -25,11 +28,11 @@ export default function Home() {
               </p>
               <div className="hero-cta">
                 <Button href="/consult" variant="primary">
-                  Book Your Consultation
+                  Book a Curiosity Call
                 </Button>
-                <Button href="/offerings" variant="secondary">
-                  Explore Offerings
-                </Button>
+                <p className="cta-subtext">
+                  A low-pressure space to slow down, ask questions, and feel into what's next.
+                </p>
               </div>
             </div>
             <div className="hero-image">
@@ -43,6 +46,18 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonial Highlight */}
+      <section className="section-testimonial-hero">
+        <div className="container content-container">
+          <blockquote className="testimonial-hero">
+            <p className="testimonial-hero-text">
+              "Working with Kimberly helped me reclaim parts of myself I thought were lost. I feel safer in my body and bolder in my desires than I ever imagined possible."
+            </p>
+            <cite className="testimonial-hero-author">— Sarah M., Return to Power Client</cite>
+          </blockquote>
         </div>
       </section>
 
@@ -125,7 +140,7 @@ export default function Home() {
                 <li>Sacred ritual design tailored to your journey</li>
               </ul>
               <Button href="/consult" variant="primary" fullWidth>
-                Book Consultation
+                Book a Curiosity Call
               </Button>
             </div>
 
@@ -142,7 +157,7 @@ export default function Home() {
                 <li>Integration resources and practices</li>
               </ul>
               <Button href="/consult" variant="secondary" fullWidth>
-                Book Consultation
+                Book a Curiosity Call
               </Button>
             </div>
 
@@ -159,7 +174,7 @@ export default function Home() {
                 <li>Follow-up email support (one exchange)</li>
               </ul>
               <Button href="/consult" variant="secondary" fullWidth>
-                Book Consultation
+                Book a Curiosity Call
               </Button>
             </div>
           </div>
@@ -258,11 +273,14 @@ export default function Home() {
         <div className="container content-container centered">
           <h2>Ready to Begin?</h2>
           <p>
-            Book your consultation and take the first step toward deeper intimacy, embodied power, and conscious pleasure.
+            Book a Curiosity Call and take the first step toward deeper intimacy, embodied power, and conscious pleasure.
           </p>
           <Button href="/consult" variant="primary">
-            Schedule Your Consultation
+            Book a Curiosity Call
           </Button>
+          <p className="cta-subtext-footer">
+            A low-pressure space to slow down, ask questions, and feel into what's next.
+          </p>
         </div>
       </section>
 
@@ -325,14 +343,29 @@ export default function Home() {
 
         .hero-cta {
           display: flex;
-          gap: 1rem;
-          flex-wrap: wrap;
+          flex-direction: column;
+          gap: 0.75rem;
+          align-items: flex-start;
         }
 
         @media (max-width: 767px) {
           .hero-cta {
-            justify-content: center;
+            align-items: center;
           }
+        }
+
+        .cta-subtext {
+          font-size: 0.95rem;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+          margin: 0;
+        }
+
+        .cta-subtext-footer {
+          font-size: 0.95rem;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+          margin-top: 0.75rem;
         }
 
         .hero-image {
@@ -611,6 +644,38 @@ export default function Home() {
         .value p {
           color: var(--neutral-charcoal);
           line-height: 1.6;
+        }
+
+        /* Testimonial Hero */
+        .section-testimonial-hero {
+          background: var(--neutral-cream);
+          padding: 4rem 0;
+        }
+
+        .testimonial-hero {
+          text-align: center;
+          padding: 3rem 2rem;
+          background: white;
+          border-radius: 1rem;
+          box-shadow: 0 10px 30px rgba(139, 58, 71, 0.15);
+          border-top: 4px solid var(--accent-terracotta);
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .testimonial-hero-text {
+          font-size: 1.3rem;
+          line-height: 1.7;
+          font-style: italic;
+          color: var(--neutral-charcoal);
+          margin-bottom: 1.5rem;
+        }
+
+        .testimonial-hero-author {
+          font-size: 1rem;
+          color: var(--neutral-warm-gray);
+          font-style: normal;
+          font-weight: 600;
         }
 
         /* Testimonials */

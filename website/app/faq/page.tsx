@@ -87,11 +87,11 @@ export default function FAQPage() {
         <div className="container content-container centered">
           <h2>Still Have Questions?</h2>
           <p>
-            Book a free consultation or send me a message. I\'m here to answer anything that\'s on your mind.
+            A low-pressure space to slow down, ask questions, and feel into what\'s next.
           </p>
           <div className="cta-buttons">
             <a href="/consult" className="btn btn-primary">
-              Schedule Consultation
+              Book a Curiosity Call
             </a>
             <a href="/contact" className="btn btn-secondary">
               Send a Message
