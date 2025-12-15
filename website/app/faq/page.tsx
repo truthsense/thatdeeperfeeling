@@ -12,7 +12,7 @@ export default function FAQPage() {
     {
       question: 'What does a typical session look like?',
       answer:
-        'Sessions blend conversation, somatic practices, and embodied exploration. We might work with breath, movement, or guided visualization. You'll always have full agency over what you explore and how deep we go. Sessions are conducted over Zoom (or in-person for Into the Embers gatherings).',
+        'Sessions blend conversation, somatic practices, and embodied exploration. We might work with breath, movement, or guided visualization. You\'ll always have full agency over what you explore and how deep we go. Sessions are conducted over Zoom (or in-person for Into the Embers gatherings).',
     },
     {
       question: 'Is this work only for people interested in BDSM?',
