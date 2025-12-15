@@ -25,7 +25,7 @@ export default function FAQPage() {
         'Book a free consultation and we\'ll explore your goals together. Return to Power is ideal for deep, sustained transformation. Edgewalker works well for focused exploration of a specific edge. Sacred Eruption is perfect for addressing a single block or breakthrough. I\'ll help you choose what feels most aligned.',
     },
     {
-      question: 'What if I've experienced sexual trauma?',
+      question: 'What if I\'ve experienced sexual trauma?',
       answer:
         'I work with many trauma survivors. This work is trauma-informed, which means we honor your nervous system, pacing, and boundaries. We move at the speed of safety. If you have untreated PTSD or need trauma therapy, I\'ll refer you to appropriate resources and we can coordinate care if desired.',
     },
@@ -50,7 +50,7 @@ export default function FAQPage() {
         'Absolutely. I work with clients of all genders, sexual orientations, and relationship structures. This work is queer-affirming, poly-friendly, and deeply respectful of alternative relationship dynamics.',
     },
     {
-      question: 'What if I'm not sure I'm ready?',
+      question: 'What if I\'m not sure I\'m ready?',
       answer:
         'That\'s completely normal. Book a consultation—there\'s no pressure to commit. We\'ll talk through your hesitations, answer questions, and you can take all the time you need to decide if this work feels right for you.',
     },
