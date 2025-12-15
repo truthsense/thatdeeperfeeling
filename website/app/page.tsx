@@ -17,7 +17,7 @@ export default function Home() {
                 <br />
                 <span className="gradient-text">and Surrender Meet</span>
               </h1>
-              <p className="hero-subtitle">
+              <p className="hero-descriptor">
                 I offer private coaching and immersive containers for people reclaiming their power, desire, and embodied authority after leaving high-demand systems.
               </p>
               <p className="hero-subtitle">
@@ -332,6 +332,14 @@ export default function Home() {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
+        }
+
+        .hero-descriptor {
+          font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+          color: var(--neutral-charcoal);
+          margin-bottom: 2rem;
+          line-height: 1.6;
+          font-weight: 500;
         }
 
         .hero-subtitle {
