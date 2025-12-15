@@ -17,17 +17,17 @@ export default function FAQPage() {
     {
       question: 'Is this work only for people interested in BDSM?',
       answer:
-        'No. While I specialize in conscious kink and power dynamics, many clients come to explore broader themes: reclaiming pleasure after trauma, deepening intimacy, embodying sovereignty, or healing self-sacrifice patterns. You don't need to identify as kinky to benefit from this work.',
+        'No. While I specialize in conscious kink and power dynamics, many clients come to explore broader themes: reclaiming pleasure after trauma, deepening intimacy, embodying sovereignty, or healing self-sacrifice patterns. You don\'t need to identify as kinky to benefit from this work.',
     },
     {
       question: 'How do I know which container is right for me?',
       answer:
-        'Book a free consultation and we'll explore your goals together. Return to Power is ideal for deep, sustained transformation. Edgewalker works well for focused exploration of a specific edge. Sacred Eruption is perfect for addressing a single block or breakthrough. I'll help you choose what feels most aligned.',
+        'Book a free consultation and we\'ll explore your goals together. Return to Power is ideal for deep, sustained transformation. Edgewalker works well for focused exploration of a specific edge. Sacred Eruption is perfect for addressing a single block or breakthrough. I\'ll help you choose what feels most aligned.',
     },
     {
       question: 'What if I've experienced sexual trauma?',
       answer:
-        'I work with many trauma survivors. This work is trauma-informed, which means we honor your nervous system, pacing, and boundaries. We move at the speed of safety. If you have untreated PTSD or need trauma therapy, I'll refer you to appropriate resources and we can coordinate care if desired.',
+        'I work with many trauma survivors. This work is trauma-informed, which means we honor your nervous system, pacing, and boundaries. We move at the speed of safety. If you have untreated PTSD or need trauma therapy, I\'ll refer you to appropriate resources and we can coordinate care if desired.',
     },
     {
       question: 'Is my information kept confidential?',
@@ -52,7 +52,7 @@ export default function FAQPage() {
     {
       question: 'What if I'm not sure I'm ready?',
       answer:
-        'That's completely normal. Book a consultation—there's no pressure to commit. We'll talk through your hesitations, answer questions, and you can take all the time you need to decide if this work feels right for you.',
+        'That\'s completely normal. Book a consultation—there\'s no pressure to commit. We\'ll talk through your hesitations, answer questions, and you can take all the time you need to decide if this work feels right for you.',
     },
     {
       question: 'How do I pay for sessions?',
@@ -62,7 +62,7 @@ export default function FAQPage() {
     {
       question: 'What happens after I book a consultation?',
       answer:
-        'After booking, you'll receive a confirmation email with a Zoom link and a brief intake form. The consultation is 60 minutes, and we'll use that time to explore your goals, answer questions, and determine if we're a good fit. There's no obligation to continue after the consultation.',
+        'After booking, you\'ll receive a confirmation email with a Zoom link and a brief intake form. The consultation is 60 minutes, and we\'ll use that time to explore your goals, answer questions, and determine if we\'re a good fit. There\'s no obligation to continue after the consultation.',
     },
   ];
 
@@ -87,7 +87,7 @@ export default function FAQPage() {
         <div className="container content-container centered">
           <h2>Still Have Questions?</h2>
           <p>
-            Book a free consultation or send me a message. I'm here to answer anything that's on your mind.
+            Book a free consultation or send me a message. I\'m here to answer anything that\'s on your mind.
           </p>
           <div className="cta-buttons">
             <a href="/consult" className="btn btn-primary">
