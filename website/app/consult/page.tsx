@@ -78,7 +78,7 @@ export default function ConsultPage() {
               <div className="step-number">1</div>
               <h3>Confirmation</h3>
               <p>
-                You'll receive a confirmation email with your Zoom link and a brief intake form.
+                You'll receive a confirmation email with your Zoom link.
               </p>
             </div>
             <div className="step">
