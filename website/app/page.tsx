@@ -74,7 +74,7 @@ export default function Home() {
             <p className="testimonial-text">
               Reaching out to Kimberly turned out to be one of the best decisions I\'ve ever made. If you\'re curious but not sure if this work is for you, I\'d recommend reaching out, talking to her, and seeing if what she offers might help you more than you think."
             </p>
-            <cite className="testimonial-author">— Client, Spring 2024</cite>
+            <cite className="testimonial-author">— Client, Spring 2025</cite>
           </blockquote>
         </div>
       </section>
