@@ -60,9 +60,21 @@ export default function Home() {
         <div className="container content-container">
           <blockquote className="testimonial">
             <p className="testimonial-text">
-              "Working with Kimberly helped me reconnect with my body and my truth in a way I didn\'t know was possible. I felt safe, seen, and deeply respected throughout the process."
+              "Last spring, I decided I needed to make a change—I was stuck in a rut and unsure what to do. When I saw Kimberly\'s profile on Fetlife, everything she described resonated with me. I reached out with no idea what I was getting into, but I wanted to give it a shot.
             </p>
-            <cite className="testimonial-author">— Client</cite>
+            <p className="testimonial-text">
+              Kimberly responded with clear next steps: a Zoom call and STI screening for safety. I agreed, and found her to be warm, friendly, and understanding. Our first in-person meeting involved a questionnaire to help her understand my interests and design a plan for future sessions. She also listened deeply to my past experiences—including an ex-girlfriend who had been married (unknown to me), who looked at houses with me, then suddenly ghosted. I thought I was over the pain. Kimberly knew differently.
+            </p>
+            <p className="testimonial-text">
+              Over the next couple of sessions, she asked thoughtful questions while introducing me to things I\'d never considered, like sensory play. In the third session, Kimberly told me she wanted to do something that would probably make me cry. I was nervous, but I trusted her—and I\'m so glad I did. She did make me cry. A lot. That day, she helped me realize my ex had done far more damage to me mentally and emotionally than I\'d ever acknowledged. It had been five years, but I wasn\'t over it. I had built walls and shut down my feelings without even realizing it. Kimberly helped me begin to feel again.
+            </p>
+            <p className="testimonial-text">
+              Since then, she\'s continued supporting me in reconnecting with my emotions. She never judged—only offered care and understanding. Kimberly has helped me enjoy my life in ways I didn\'t think were possible. She has a real gift for helping people feel again.
+            </p>
+            <p className="testimonial-text">
+              Reaching out to Kimberly turned out to be one of the best decisions I\'ve ever made. If you\'re curious but not sure if this work is for you, I\'d recommend reaching out, talking to her, and seeing if what she offers might help you more than you think."
+            </p>
+            <cite className="testimonial-author">— Client, Spring 2024</cite>
           </blockquote>
         </div>
       </section>
@@ -265,21 +277,31 @@ export default function Home() {
         }
 
         .testimonial {
-          text-align: center;
-          padding: 3rem 2rem;
+          text-align: left;
+          padding: 3rem 2.5rem;
           background: white;
           border-radius: 1rem;
           box-shadow: 0 10px 30px rgba(139, 58, 71, 0.15);
           border-top: 4px solid var(--accent-terracotta);
-          max-width: 800px;
+          max-width: 900px;
           margin: 0 auto;
         }
 
+        @media (max-width: 767px) {
+          .testimonial {
+            padding: 2rem 1.5rem;
+          }
+        }
+
         .testimonial-text {
-          font-size: 1.3rem;
-          line-height: 1.7;
+          font-size: 1.05rem;
+          line-height: 1.8;
           font-style: italic;
           color: var(--neutral-charcoal);
+          margin-bottom: 1.25rem;
+        }
+
+        .testimonial-text:last-of-type {
           margin-bottom: 1.5rem;
         }
 
@@ -288,6 +310,9 @@ export default function Home() {
           color: var(--neutral-warm-gray);
           font-style: normal;
           font-weight: 600;
+          text-align: right;
+          display: block;
+          margin-top: 1.5rem;
         }
 
         /* Approach */
