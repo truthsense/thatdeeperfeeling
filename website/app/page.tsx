@@ -156,9 +156,6 @@ export default function Home() {
             <p>
               Book a Curiosity Call and we\'ll explore your goals, answer your questions, and help you choose the path that feels most aligned.
             </p>
-            <Button href="/consult" variant="primary">
-              Book a Curiosity Call
-            </Button>
           </div>
         </div>
       </section>
