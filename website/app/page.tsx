@@ -92,26 +92,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Offerings Preview */}
-      <section className="section-offerings-preview">
+      {/* Containers Overview */}
+      <section className="section-containers">
         <div className="container content-container">
-          <p className="offerings-intro">
-            I offer several ways to enter this work, including:
-          </p>
-          <ul className="offerings-list">
-            <li>Long-term one-on-one coaching containers</li>
-            <li>Shorter immersive coaching journeys</li>
-            <li>One-time deep-dive sessions</li>
-            <li>In-person gatherings and retreats</li>
-            <li>Community-based spaces for reflection and integration</li>
-          </ul>
-          <p className="offerings-explore">
-            You can explore all current offerings here.
-          </p>
-          <div className="offerings-cta">
-            <Button href="/offerings" variant="secondary">
-              View Offerings
-            </Button>
+          <h2 className="containers-title">Ways We Can Work Together</h2>
+
+          <div className="container-card">
+            <h3>Return to Power</h3>
+            <p className="container-subtitle">6-Month Private Container</p>
+            <p className="container-description">
+              Deep, sustained transformation for reclaiming sovereignty and embodying pleasure. This container holds space for profound shifts in how you relate to power, desire, intimacy, and your own body. For those ready to go all the way.
+            </p>
+          </div>
+
+          <div className="container-card">
+            <h3>Edgewalker</h3>
+            <p className="container-subtitle">3-Month Private Container</p>
+            <p className="container-description">
+              Explore a specific edge—desire, kink dynamics, or pleasure reclamation. Perfect for exploring one focused area of your intimacy journey, whether it\'s communication, power dynamics, or healing your relationship with pleasure.
+            </p>
+          </div>
+
+          <div className="container-card">
+            <h3>Sacred Eruption</h3>
+            <p className="container-subtitle">Single Session Deep Dive</p>
+            <p className="container-description">
+              A powerful, contained exploration for a specific breakthrough. One intensive session for addressing a specific block, question, or moment of transformation. Ideal for focused work on a particular edge.
+            </p>
+          </div>
+
+          <div className="container-card">
+            <h3>Flicker and Flame</h3>
+            <p className="container-subtitle">Online Membership</p>
+            <p className="container-description">
+              Community, resources, and monthly workshops for ongoing exploration. A sacred space for continuous learning, connection, and embodiment with a community of conscious explorers.
+            </p>
+          </div>
+
+          <div className="container-card">
+            <h3>Into the Embers</h3>
+            <p className="container-subtitle">In-Person Gatherings</p>
+            <p className="container-description">
+              Sacred group containers for embodied intimacy and conscious kink exploration. Multi-day immersive experiences with deep group work, somatic practices, and facilitated exploration.
+            </p>
           </div>
         </div>
       </section>
@@ -342,54 +365,50 @@ export default function Home() {
           margin: 0 auto;
         }
 
-        /* Offerings Preview */
-        .section-offerings-preview {
+        /* Containers Overview */
+        .section-containers {
           background: var(--neutral-cream);
           padding: 5rem 0;
         }
 
-        .offerings-intro {
-          font-size: 1.15rem;
-          color: var(--neutral-charcoal);
+        .containers-title {
+          font-size: clamp(1.75rem, 3vw, 2.5rem);
           text-align: center;
-          margin-bottom: 2rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 3rem;
         }
 
-        .offerings-list {
-          list-style: none;
-          max-width: 600px;
-          margin: 0 auto 2rem;
-          padding: 0;
+        .container-card {
+          background: white;
+          padding: 2rem 2.5rem;
+          border-radius: 1rem;
+          margin-bottom: 1.5rem;
+          border-left: 4px solid var(--accent-terracotta);
+          box-shadow: 0 5px 20px rgba(139, 58, 71, 0.08);
         }
 
-        .offerings-list li {
-          padding: 0.75rem 0;
-          padding-left: 2rem;
-          position: relative;
+        .container-card:last-child {
+          margin-bottom: 0;
+        }
+
+        .container-card h3 {
+          font-size: 1.5rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 0.25rem;
+        }
+
+        .container-subtitle {
+          font-size: 0.95rem;
+          color: var(--accent-terracotta);
+          font-weight: 500;
+          margin-bottom: 1rem;
+        }
+
+        .container-description {
           font-size: 1.05rem;
           color: var(--neutral-charcoal);
           line-height: 1.7;
-          text-align: center;
-        }
-
-        .offerings-list li::before {
-          content: '•';
-          position: absolute;
-          left: 50%;
-          transform: translateX(-150%);
-          color: var(--accent-terracotta);
-          font-size: 1.3rem;
-        }
-
-        .offerings-explore {
-          font-size: 1.05rem;
-          color: var(--neutral-warm-gray);
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-
-        .offerings-cta {
-          text-align: center;
+          margin: 0;
         }
 
         /* Final CTA */

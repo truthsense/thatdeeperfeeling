@@ -11,7 +11,6 @@ export default function Navigation() {
     { label: 'Home', href: '/' },
     { label: 'Start Here', href: '/start' },
     { label: 'About', href: '/about' },
-    { label: 'Offerings', href: '/offerings' },
     { label: 'Consult', href: '/consult' },
     { label: 'Events', href: '/events' },
     { label: 'Resources', href: '/resources' },

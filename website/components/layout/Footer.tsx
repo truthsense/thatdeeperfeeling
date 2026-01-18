@@ -25,9 +25,6 @@ export default function Footer() {
                 <Link href="/about">About Kimberly</Link>
               </li>
               <li>
-                <Link href="/offerings">Offerings</Link>
-              </li>
-              <li>
                 <Link href="/consult">Book a Curiosity Call</Link>
               </li>
               <li>
