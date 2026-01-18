@@ -97,44 +97,68 @@ export default function Home() {
         <div className="container content-container">
           <h2 className="containers-title">Ways We Can Work Together</h2>
 
+          <h3 className="containers-category">Private Coaching</h3>
+
           <div className="container-card">
-            <h3>Return to Power</h3>
-            <p className="container-subtitle">6-Month Private Container</p>
+            <div className="container-header">
+              <h4>Return to Power</h4>
+              <span className="container-type">6-Month Container</span>
+            </div>
             <p className="container-description">
               Deep, sustained transformation for reclaiming sovereignty and embodying pleasure. This container holds space for profound shifts in how you relate to power, desire, intimacy, and your own body. For those ready to go all the way.
             </p>
           </div>
 
           <div className="container-card">
-            <h3>Edgewalker</h3>
-            <p className="container-subtitle">3-Month Private Container</p>
+            <div className="container-header">
+              <h4>Edgewalker</h4>
+              <span className="container-type">3-Month Container</span>
+            </div>
             <p className="container-description">
               Explore a specific edge—desire, kink dynamics, or pleasure reclamation. Perfect for exploring one focused area of your intimacy journey, whether it\'s communication, power dynamics, or healing your relationship with pleasure.
             </p>
           </div>
 
           <div className="container-card">
-            <h3>Sacred Eruption</h3>
-            <p className="container-subtitle">Single Session Deep Dive</p>
+            <div className="container-header">
+              <h4>Sacred Eruption</h4>
+              <span className="container-type">Single Session</span>
+            </div>
             <p className="container-description">
               A powerful, contained exploration for a specific breakthrough. One intensive session for addressing a specific block, question, or moment of transformation. Ideal for focused work on a particular edge.
             </p>
           </div>
 
+          <h3 className="containers-category">Community & Immersive Experiences</h3>
+
           <div className="container-card">
-            <h3>Flicker and Flame</h3>
-            <p className="container-subtitle">Online Membership</p>
+            <div className="container-header">
+              <h4>Flicker and Flame</h4>
+              <span className="container-type">Online Membership</span>
+            </div>
             <p className="container-description">
               Community, resources, and monthly workshops for ongoing exploration. A sacred space for continuous learning, connection, and embodiment with a community of conscious explorers.
             </p>
           </div>
 
           <div className="container-card">
-            <h3>Into the Embers</h3>
-            <p className="container-subtitle">In-Person Gatherings</p>
+            <div className="container-header">
+              <h4>Into the Embers</h4>
+              <span className="container-type">In-Person Gatherings</span>
+            </div>
             <p className="container-description">
               Sacred group containers for embodied intimacy and conscious kink exploration. Multi-day immersive experiences with deep group work, somatic practices, and facilitated exploration.
             </p>
+          </div>
+
+          <div className="containers-consult">
+            <h3>Not Sure Which Container Is Right for You?</h3>
+            <p>
+              Book a Curiosity Call and we\'ll explore your goals, answer your questions, and help you choose the path that feels most aligned.
+            </p>
+            <Button href="/consult" variant="primary">
+              Book a Curiosity Call
+            </Button>
           </div>
         </div>
       </section>
@@ -378,37 +402,82 @@ export default function Home() {
           margin-bottom: 3rem;
         }
 
+        .containers-category {
+          font-size: 1.1rem;
+          color: var(--neutral-warm-gray);
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 1.5rem;
+          margin-top: 2.5rem;
+          font-weight: 600;
+        }
+
+        .containers-category:first-of-type {
+          margin-top: 0;
+        }
+
         .container-card {
           background: white;
-          padding: 2rem 2.5rem;
+          padding: 1.75rem 2rem;
           border-radius: 1rem;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
           border-left: 4px solid var(--accent-terracotta);
           box-shadow: 0 5px 20px rgba(139, 58, 71, 0.08);
         }
 
-        .container-card:last-child {
-          margin-bottom: 0;
+        .container-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0.75rem;
+          flex-wrap: wrap;
+          gap: 0.5rem;
         }
 
-        .container-card h3 {
-          font-size: 1.5rem;
+        .container-card h4 {
+          font-size: 1.4rem;
           color: var(--primary-burgundy);
-          margin-bottom: 0.25rem;
+          margin: 0;
         }
 
-        .container-subtitle {
-          font-size: 0.95rem;
+        .container-type {
+          font-size: 0.9rem;
           color: var(--accent-terracotta);
-          font-weight: 500;
-          margin-bottom: 1rem;
+          font-weight: 600;
+          text-align: right;
         }
 
         .container-description {
-          font-size: 1.05rem;
+          font-size: 1rem;
           color: var(--neutral-charcoal);
           line-height: 1.7;
           margin: 0;
+        }
+
+        .containers-consult {
+          background: white;
+          padding: 2.5rem;
+          border-radius: 1rem;
+          text-align: center;
+          margin-top: 3rem;
+          box-shadow: 0 10px 30px rgba(139, 58, 71, 0.12);
+          border-top: 4px solid var(--primary-burgundy);
+        }
+
+        .containers-consult h3 {
+          font-size: 1.5rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 1rem;
+        }
+
+        .containers-consult p {
+          font-size: 1.05rem;
+          color: var(--neutral-charcoal);
+          line-height: 1.7;
+          margin-bottom: 1.5rem;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         /* Final CTA */
