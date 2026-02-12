@@ -161,7 +161,7 @@ export default function DivingDeeperPage() {
                   <li>Embodiment homework & integration</li>
                 </ul>
               </div>
-              <p className="offering-price">$3,600</p>
+              <p className="offering-cta">Reach out to discuss tailoring to the needs of your journey</p>
             </div>
           </div>
 
@@ -190,7 +190,7 @@ export default function DivingDeeperPage() {
                   <li>Personalized reading & resources</li>
                 </ul>
               </div>
-              <p className="offering-price">$2,100</p>
+              <p className="offering-cta">Reach out to discuss tailoring to the needs of your journey</p>
             </div>
           </div>
 
@@ -218,7 +218,7 @@ export default function DivingDeeperPage() {
                   <li>Follow-up email support</li>
                 </ul>
               </div>
-              <p className="offering-price">$400</p>
+              <p className="offering-cta">Reach out to discuss tailoring to the needs of your journey</p>
             </div>
           </div>
 
@@ -247,7 +247,7 @@ export default function DivingDeeperPage() {
                   <li>Cancel anytime</li>
                 </ul>
               </div>
-              <p className="offering-price">$47/month</p>
+              <p className="offering-cta">Reach out to discuss tailoring to the needs of your journey</p>
             </div>
           </div>
 
@@ -276,7 +276,7 @@ export default function DivingDeeperPage() {
                   <li>Limited to 8-12 participants</li>
                 </ul>
               </div>
-              <p className="offering-price">TBD</p>
+              <p className="offering-cta">Reach out to discuss tailoring to the needs of your journey</p>
             </div>
           </div>
 
@@ -416,12 +416,13 @@ export default function DivingDeeperPage() {
           font-weight: 700;
         }
 
-        .offering-price {
-          font-size: 1.75rem;
-          font-weight: 700;
+        .offering-cta {
+          font-size: 1.05rem;
+          font-weight: 500;
           color: var(--primary-burgundy);
           margin: 0;
-          font-family: var(--font-heading);
+          font-style: italic;
+          line-height: 1.6;
         }
 
         /* CTA */
