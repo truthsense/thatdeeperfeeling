@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 
 export default function EventsPage() {
   return (
@@ -29,22 +30,33 @@ export default function EventsPage() {
       {/* About the Retreat */}
       <section className="retreat-about">
         <div className="container content-container">
-          <div className="about-inner">
-            <h2>About the Retreat</h2>
-            <p>
-              Reclaiming the Forbidden is a 3-day immersive retreat for women navigating life after high-demand religion, rigid belief systems, or identities that required self-erasure to belong.
-            </p>
-            <p className="emphasis-line">This isn&rsquo;t about burning everything down.</p>
-            <p className="emphasis-line">And it&rsquo;s not about performing rebellion.</p>
-            <p>
-              It&rsquo;s about reclaiming yourself &mdash; slowly, intentionally, on your terms.
-            </p>
-            <p>
-              Over the weekend we explore embodiment, internal authority, shame untangling, and what it means to walk the third path between obedience and chaos.
-            </p>
-            <p>This work is grounded, contained, and deeply intentional.</p>
-            <p className="emphasis-line">Nothing is forced.</p>
-            <p className="emphasis-line">Everything is optional.</p>
+          <div className="about-layout">
+            <div className="about-inner">
+              <h2>About the Retreat</h2>
+              <p>
+                Reclaiming the Forbidden is a 3-day immersive retreat for women navigating life after high-demand religion, rigid belief systems, or identities that required self-erasure to belong.
+              </p>
+              <p className="emphasis-line">This isn&rsquo;t about burning everything down.</p>
+              <p className="emphasis-line">And it&rsquo;s not about performing rebellion.</p>
+              <p>
+                It&rsquo;s about reclaiming yourself &mdash; slowly, intentionally, on your terms.
+              </p>
+              <p>
+                Over the weekend we explore embodiment, internal authority, shame untangling, and what it means to walk the third path between obedience and chaos.
+              </p>
+              <p>This work is grounded, contained, and deeply intentional.</p>
+              <p className="emphasis-line">Nothing is forced.</p>
+              <p className="emphasis-line">Everything is optional.</p>
+            </div>
+            <div className="about-image">
+              <Image
+                src="/images/retreat-views.jpeg"
+                alt="Desert mountain views from the retreat venue"
+                width={600}
+                height={400}
+                className="section-photo"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -96,6 +108,22 @@ export default function EventsPage() {
               </ul>
             </div>
           </div>
+          <div className="flow-images">
+            <Image
+              src="/images/retreat-gathering.jpeg"
+              alt="Spacious gathering area with comfortable seating"
+              width={600}
+              height={400}
+              className="section-photo"
+            />
+            <Image
+              src="/images/retreat-lounge.jpeg"
+              alt="Lounge area with desert views and sunset light"
+              width={600}
+              height={400}
+              className="section-photo"
+            />
+          </div>
         </div>
       </section>
 
@@ -107,6 +135,31 @@ export default function EventsPage() {
           <p className="location-features">
             Desert views. Pool. Firepit. Spacious gathering areas.
           </p>
+          <div className="location-gallery">
+            <Image
+              src="/images/retreat-rear.jpg"
+              alt="Private luxury retreat home with pool at sunset"
+              width={800}
+              height={600}
+              className="location-photo-hero"
+            />
+            <div className="location-gallery-row">
+              <Image
+                src="/images/retreat-pool.jpg"
+                alt="Pool with rock waterfall feature at sunset"
+                width={600}
+                height={400}
+                className="section-photo"
+              />
+              <Image
+                src="/images/retreat-hottub.jpg"
+                alt="Rooftop patio with fire pit and hot tub"
+                width={600}
+                height={400}
+                className="section-photo"
+              />
+            </div>
+          </div>
           <p className="location-note">Exact address provided upon registration.</p>
         </div>
       </section>
@@ -126,6 +179,15 @@ export default function EventsPage() {
                   <li>Sunday breakfast</li>
                   <li>Friday evening refreshments</li>
                 </ul>
+              </div>
+              <div className="dining-image">
+                <Image
+                  src="/images/retreat-dining.png"
+                  alt="Elegant dining area set for a private chef dinner"
+                  width={600}
+                  height={400}
+                  className="section-photo"
+                />
               </div>
             </div>
 
@@ -365,15 +427,38 @@ export default function EventsPage() {
           padding: 5rem 0;
         }
 
+        .about-layout {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 3rem;
+          align-items: center;
+        }
+
+        @media (min-width: 768px) {
+          .about-layout {
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+          }
+        }
+
         .about-inner {
           max-width: 700px;
-          margin: 0 auto;
+        }
+
+        .about-image {
+          display: flex;
+          justify-content: center;
         }
 
         .retreat-about h2 {
-          text-align: center;
           font-size: clamp(2rem, 4vw, 3rem);
           margin-bottom: 2rem;
+        }
+
+        @media (max-width: 767px) {
+          .retreat-about h2 {
+            text-align: center;
+          }
         }
 
         .retreat-about p {
@@ -387,6 +472,23 @@ export default function EventsPage() {
           font-style: italic;
           color: var(--primary-burgundy) !important;
           font-weight: 500;
+        }
+
+        /* Section photos */
+        :global(.section-photo) {
+          border-radius: 0.75rem;
+          box-shadow: 0 10px 30px rgba(139, 58, 71, 0.15);
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+        }
+
+        :global(.location-photo-hero) {
+          border-radius: 0.75rem;
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+          object-fit: cover;
+          width: 100%;
+          height: auto;
         }
 
         /* Explore */
@@ -498,8 +600,19 @@ export default function EventsPage() {
           line-height: 1;
         }
 
+        .flow-images {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+          max-width: 900px;
+          margin: 3rem auto 0;
+        }
+
         @media (max-width: 768px) {
           .flow-grid {
+            grid-template-columns: 1fr;
+          }
+          .flow-images {
             grid-template-columns: 1fr;
           }
         }
@@ -531,10 +644,28 @@ export default function EventsPage() {
           letter-spacing: 0.02em;
         }
 
+        .location-gallery {
+          max-width: 900px;
+          margin: 2.5rem auto;
+        }
+
+        .location-gallery-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+          .location-gallery-row {
+            grid-template-columns: 1fr;
+          }
+        }
+
         .location-note {
           font-style: italic;
           font-size: 1rem !important;
-          margin-top: 1rem;
+          margin-top: 0;
         }
 
         /* Investment */
@@ -601,6 +732,10 @@ export default function EventsPage() {
           color: var(--accent-terracotta);
           font-size: 1.25rem;
           line-height: 1;
+        }
+
+        .dining-image {
+          margin-top: 1.5rem;
         }
 
         .accommodation-card {
