@@ -169,8 +169,9 @@ export default function EventsPage() {
         <div className="container content-container">
           <div className="investment-inner">
             <h2>Investment</h2>
+
             <div className="price-card">
-              <h3>Base Retreat Ticket: $1,200</h3>
+              <h3>Retreat Ticket: $1,200</h3>
               <div className="includes">
                 <h4>Includes:</h4>
                 <ul>
@@ -191,16 +192,34 @@ export default function EventsPage() {
               </div>
             </div>
 
+            <div className="deposit-card">
+              <h3>Payment &amp; Deposit Structure</h3>
+              <div className="deposit-highlight">
+                <p className="deposit-amount">$500 non-refundable deposit to reserve your spot</p>
+              </div>
+              <ul className="deposit-details">
+                <li>Remaining balance due by <strong>April 1, 2026</strong></li>
+                <li>Payment plans available at checkout</li>
+                <li>All balances must be paid in full by <strong>April 1, 2026</strong></li>
+              </ul>
+            </div>
+
             <div className="accommodation-card">
-              <h3>On-Site Accommodation Options Available</h3>
+              <h3>On-Site Lodging (Separate Purchase)</h3>
+              <p className="lodging-note">Lodging is optional and purchased separately from your retreat ticket.</p>
               <ul>
                 <li><strong>Premium King Suites</strong> &mdash; Single &amp; Double Occupancy</li>
                 <li><strong>&ldquo;Slumber Party&rdquo; Bunk Room</strong> option for group bookings</li>
               </ul>
             </div>
 
+            <div className="policy-card">
+              <p>
+                Due to the intimate and curated nature of this retreat, all payments are non-refundable. If you are unable to attend, you may transfer your ticket to another eligible woman with prior approval.
+              </p>
+            </div>
+
             <p className="limited-note">Limited to 20&ndash;25 women.</p>
-            <p className="payment-note">Payment plans available.</p>
 
             <Button href="/consult" variant="primary">
               Reserve Your Spot
@@ -337,10 +356,10 @@ export default function EventsPage() {
             <div className="faq-item">
               <h3>What is your cancellation policy?</h3>
               <p>
-                All payments are non-refundable due to the intimate nature of the event and the advance planning required.
+                Due to the intimate and curated nature of this retreat, all payments are non-refundable.
               </p>
               <p>
-                If you are unable to attend, you may transfer your ticket to another eligible participant with prior approval.
+                If you are unable to attend, you may transfer your ticket to another eligible woman with prior approval.
               </p>
             </div>
 
@@ -738,6 +757,61 @@ export default function EventsPage() {
           margin-top: 1.5rem;
         }
 
+        .deposit-card {
+          background: white;
+          padding: 2.5rem;
+          border-radius: 0.75rem;
+          box-shadow: 0 10px 40px rgba(139, 58, 71, 0.1);
+          margin-bottom: 2rem;
+          text-align: left;
+          border-top: 3px solid var(--accent-terracotta);
+        }
+
+        .deposit-card h3 {
+          font-size: 1.35rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+
+        .deposit-highlight {
+          background: var(--neutral-cream);
+          padding: 1.25rem 1.5rem;
+          border-radius: 0.5rem;
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+
+        .deposit-amount {
+          font-size: 1.15rem;
+          font-weight: 600;
+          color: var(--primary-burgundy);
+          margin: 0;
+        }
+
+        .deposit-details {
+          list-style: none;
+          padding: 0;
+        }
+
+        .deposit-details li {
+          padding: 0.5rem 0;
+          padding-left: 1.5rem;
+          position: relative;
+          font-size: 1.05rem;
+          color: var(--neutral-charcoal);
+          line-height: 1.6;
+        }
+
+        .deposit-details li::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          color: var(--accent-terracotta);
+          font-size: 1.25rem;
+          line-height: 1;
+        }
+
         .accommodation-card {
           background: white;
           padding: 2rem 2.5rem;
@@ -750,20 +824,36 @@ export default function EventsPage() {
         .accommodation-card h3 {
           font-size: 1.25rem;
           color: var(--primary-burgundy);
+          margin-bottom: 0.75rem;
+        }
+
+        .lodging-note {
+          font-size: 0.95rem;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
           margin-bottom: 1rem;
+        }
+
+        .policy-card {
+          background: var(--neutral-soft-white);
+          padding: 1.5rem 2rem;
+          border-radius: 0.5rem;
+          margin-bottom: 2rem;
+          border-left: 3px solid var(--secondary-taupe);
+        }
+
+        .policy-card p {
+          font-size: 0.95rem;
+          color: var(--neutral-warm-gray);
+          line-height: 1.7;
+          margin: 0;
+          text-align: left;
         }
 
         .limited-note {
           font-weight: 600;
           font-size: 1.1rem;
           color: var(--primary-burgundy);
-          margin-bottom: 0.5rem;
-        }
-
-        .payment-note {
-          font-size: 1rem;
-          color: var(--neutral-warm-gray);
-          font-style: italic;
           margin-bottom: 2rem;
         }
 
