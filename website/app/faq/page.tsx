@@ -87,7 +87,7 @@ export default function FAQPage() {
         <div className="container content-container centered">
           <h2>Still Have Questions?</h2>
           <p>
-            A low-pressure space to slow down, ask questions, and feel into what\'s next.
+            A low-pressure space to slow down, ask questions, and feel into what&rsquo;s next.
           </p>
           <div className="cta-buttons">
             <a href="/consult" className="btn btn-primary">

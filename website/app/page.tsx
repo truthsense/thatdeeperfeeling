@@ -44,7 +44,7 @@ export default function Home() {
       {/* Who This Is For */}
       <section className="section-who">
         <div className="container content-container">
-          <h2 className="section-title">This work may be for you if you\'re:</h2>
+          <h2 className="section-title">This work may be for you if you&rsquo;re:</h2>
           <ul className="who-list">
             <li>Deconstructing a high-demand religion, culture, or relational dynamic</li>
             <li>Tired of outsourcing your sense of safety, worth, or authority</li>
@@ -60,19 +60,19 @@ export default function Home() {
         <div className="container content-container">
           <blockquote className="testimonial">
             <p className="testimonial-text">
-              "Last spring, I decided I needed to make a change—I was stuck in a rut and unsure what to do. When I saw Kimberly\'s profile on Fetlife, everything she described resonated with me. I reached out with no idea what I was getting into, but I wanted to give it a shot.
+              &ldquo;Last spring, I decided I needed to make a change&mdash;I was stuck in a rut and unsure what to do. When I saw Kimberly&rsquo;s profile on Fetlife, everything she described resonated with me. I reached out with no idea what I was getting into, but I wanted to give it a shot.
             </p>
             <p className="testimonial-text">
-              Kimberly responded with clear next steps: a Zoom call and STI screening for safety. I agreed, and found her to be warm, friendly, and understanding. Our first in-person meeting involved a questionnaire to help her understand my interests and design a plan for future sessions. She also listened deeply to my past experiences—including an ex-girlfriend who had been married (unknown to me), who looked at houses with me, then suddenly ghosted. I thought I was over the pain. Kimberly knew differently.
+              Kimberly responded with clear next steps: a Zoom call and STI screening for safety. I agreed, and found her to be warm, friendly, and understanding. Our first in-person meeting involved a questionnaire to help her understand my interests and design a plan for future sessions. She also listened deeply to my past experiences&mdash;including an ex-girlfriend who had been married (unknown to me), who looked at houses with me, then suddenly ghosted. I thought I was over the pain. Kimberly knew differently.
             </p>
             <p className="testimonial-text">
-              Over the next couple of sessions, she asked thoughtful questions while introducing me to things I\'d never considered, like sensory play. In the third session, Kimberly told me she wanted to do something that would probably make me cry. I was nervous, but I trusted her—and I\'m so glad I did. She did make me cry. A lot. That day, she helped me realize my ex had done far more damage to me mentally and emotionally than I\'d ever acknowledged. It had been five years, but I wasn\'t over it. I had built walls and shut down my feelings without even realizing it. Kimberly helped me begin to feel again.
+              Over the next couple of sessions, she asked thoughtful questions while introducing me to things I&rsquo;d never considered, like sensory play. In the third session, Kimberly told me she wanted to do something that would probably make me cry. I was nervous, but I trusted her&mdash;and I&rsquo;m so glad I did. She did make me cry. A lot. That day, she helped me realize my ex had done far more damage to me mentally and emotionally than I&rsquo;d ever acknowledged. It had been five years, but I wasn&rsquo;t over it. I had built walls and shut down my feelings without even realizing it. Kimberly helped me begin to feel again.
             </p>
             <p className="testimonial-text">
-              Since then, she\'s continued supporting me in reconnecting with my emotions. She never judged—only offered care and understanding. Kimberly has helped me enjoy my life in ways I didn\'t think were possible. She has a real gift for helping people feel again.
+              Since then, she&rsquo;s continued supporting me in reconnecting with my emotions. She never judged&mdash;only offered care and understanding. Kimberly has helped me enjoy my life in ways I didn&rsquo;t think were possible. She has a real gift for helping people feel again.
             </p>
             <p className="testimonial-text">
-              Reaching out to Kimberly turned out to be one of the best decisions I\'ve ever made. If you\'re curious but not sure if this work is for you, I\'d recommend reaching out, talking to her, and seeing if what she offers might help you more than you think."
+              Reaching out to Kimberly turned out to be one of the best decisions I&rsquo;ve ever made. If you&rsquo;re curious but not sure if this work is for you, I&rsquo;d recommend reaching out, talking to her, and seeing if what she offers might help you more than you think.&rdquo;
             </p>
             <cite className="testimonial-author">— Client, Spring 2025</cite>
           </blockquote>
@@ -115,7 +115,7 @@ export default function Home() {
               <span className="container-type">3-Month Container</span>
             </div>
             <p className="container-description">
-              Explore a specific edge—desire, kink dynamics, or pleasure reclamation. Perfect for exploring one focused area of your intimacy journey, whether it\'s communication, power dynamics, or healing your relationship with pleasure.
+              Explore a specific edge—desire, kink dynamics, or pleasure reclamation. Perfect for exploring one focused area of your intimacy journey, whether it&rsquo;s communication, power dynamics, or healing your relationship with pleasure.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="containers-consult">
             <h3>Not Sure Which Container Is Right for You?</h3>
             <p>
-              Book a Curiosity Call and we\'ll explore your goals, answer your questions, and help you choose the path that feels most aligned.
+              Book a Curiosity Call and we&rsquo;ll explore your goals, answer your questions, and help you choose the path that feels most aligned.
             </p>
           </div>
         </div>

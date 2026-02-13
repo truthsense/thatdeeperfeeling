@@ -152,7 +152,7 @@ export default function DivingDeeperPage() {
                 <p>Ready for sustained, deep work. Committed to transformation.</p>
               </div>
               <div className="detail-section">
-                <h4>What\'s Included:</h4>
+                <h4>What&rsquo;s Included:</h4>
                 <ul>
                   <li>Bi-weekly 90-minute sessions</li>
                   <li>Personalized practices & resources</li>
@@ -173,7 +173,7 @@ export default function DivingDeeperPage() {
               Explore a specific edge—desire, kink dynamics, or pleasure reclamation.
             </p>
             <p className="offering-description">
-              Perfect for exploring one focused area of your intimacy journey. Whether it\'s communication, power dynamics, or healing your relationship with pleasure after trauma.
+              Perfect for exploring one focused area of your intimacy journey. Whether it&rsquo;s communication, power dynamics, or healing your relationship with pleasure after trauma.
             </p>
             <div className="offering-details">
               <div className="detail-section">
@@ -181,7 +181,7 @@ export default function DivingDeeperPage() {
                 <p>Have a specific goal or edge to explore. Want focused support.</p>
               </div>
               <div className="detail-section">
-                <h4>What\'s Included:</h4>
+                <h4>What&rsquo;s Included:</h4>
                 <ul>
                   <li>Weekly 60-minute sessions</li>
                   <li>Customized embodiment practices</li>
@@ -210,7 +210,7 @@ export default function DivingDeeperPage() {
                 <p>Have a specific question or block. Want a contained experience.</p>
               </div>
               <div className="detail-section">
-                <h4>What\'s Included:</h4>
+                <h4>What&rsquo;s Included:</h4>
                 <ul>
                   <li>2-hour intensive session</li>
                   <li>Pre-session intake & preparation</li>
@@ -238,7 +238,7 @@ export default function DivingDeeperPage() {
                 <p>Want ongoing support. Value community and continuous learning.</p>
               </div>
               <div className="detail-section">
-                <h4>What\'s Included:</h4>
+                <h4>What&rsquo;s Included:</h4>
                 <ul>
                   <li>Monthly live workshops</li>
                   <li>Private community forum</li>
@@ -267,7 +267,7 @@ export default function DivingDeeperPage() {
                 <p>Want in-person embodied work. Value group energy and connection.</p>
               </div>
               <div className="detail-section">
-                <h4>What\'s Included:</h4>
+                <h4>What&rsquo;s Included:</h4>
                 <ul>
                   <li>2-3 day immersive retreats</li>
                   <li>Somatic practices & rituals</li>
@@ -288,13 +288,13 @@ export default function DivingDeeperPage() {
         <div className="container content-container centered">
           <h2>Ready to Explore?</h2>
           <p>
-            If something here calls to you, let\'s talk. Book a Curiosity Call to explore which container might be right for you.
+            If something here calls to you, let&rsquo;s talk. Book a Curiosity Call to explore which container might be right for you.
           </p>
           <Button href="/consult" variant="primary">
             Book a Curiosity Call
           </Button>
           <p className="cta-subtext">
-            A low-pressure space to slow down, ask questions, and feel into what\'s next.
+            A low-pressure space to slow down, ask questions, and feel into what&rsquo;s next.
           </p>
         </div>
       </section>
