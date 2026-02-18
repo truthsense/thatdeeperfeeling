@@ -1,9 +1,22 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    // TODO: Connect to newsletter service (Mailchimp, ConvertKit, etc.)
+    // For now, show confirmation and log the email
+    console.log('Newsletter signup:', email);
+    setSubscribed(true);
+    setEmail('');
+  };
 
   return (
     <footer className="footer">
@@ -55,17 +68,26 @@ export default function Footer() {
             <p className="newsletter-text">
               Receive invitations, insights, and resources for deepening your intimacy journey.
             </p>
-            <form className="newsletter-form">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="newsletter-input"
-                aria-label="Email address"
-              />
-              <button type="submit" className="newsletter-button">
-                Subscribe
-              </button>
-            </form>
+            {subscribed ? (
+              <p className="newsletter-success">
+                Thank you for subscribing. We&rsquo;ll be in touch.
+              </p>
+            ) : (
+              <form className="newsletter-form" onSubmit={handleSubscribe}>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="newsletter-input"
+                  aria-label="Email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <button type="submit" className="newsletter-button">
+                  Subscribe
+                </button>
+              </form>
+            )}
 
             {/* Social Links */}
             <div className="social-links">
@@ -183,6 +205,13 @@ export default function Footer() {
         .newsletter-input:focus {
           outline: none;
           border-color: var(--primary-burgundy);
+        }
+
+        .newsletter-success {
+          font-size: 0.95rem;
+          color: var(--primary-burgundy);
+          font-style: italic;
+          line-height: 1.5;
         }
 
         .newsletter-button {

@@ -81,7 +81,7 @@ export default function StartHerePage() {
         <div className="container content-container">
           <h2>What Makes This Work Different</h2>
           <p>
-            This is kink-aware, consent-centered, trauma-trained work.
+            This is kink-aware, consent-centered, trauma-informed work.
           </p>
           <div className="definition">
             <p><strong>By kink-aware, I mean:</strong></p>
