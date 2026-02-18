@@ -21,7 +21,7 @@ export default function EventsPage() {
             If being a &ldquo;good girl&rdquo; kept you safe&hellip; but somewhere along the way you lost pieces of yourself&hellip;
           </p>
           <p className="hero-declaration">This weekend is for you.</p>
-          <Button href="/consult" variant="primary">
+          <Button href="/events/register" variant="primary">
             Reserve Your Spot
           </Button>
         </div>
@@ -221,7 +221,7 @@ export default function EventsPage() {
 
             <p className="limited-note">Limited to 20&ndash;25 women.</p>
 
-            <Button href="/consult" variant="primary">
+            <Button href="/events/register" variant="primary">
               Reserve Your Spot
             </Button>
           </div>
@@ -244,8 +244,8 @@ export default function EventsPage() {
             If something in your body softened reading this&hellip;<br />
             this may be your invitation.
           </p>
-          <Button href="/consult" variant="primary">
-            Apply or Register
+          <Button href="/events/register" variant="primary">
+            Register Now
           </Button>
         </div>
       </section>
