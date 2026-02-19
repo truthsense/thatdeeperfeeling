@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const amount = paymentOption === 'full' ? 120000 : 50000; // cents
+    const amount = paymentOption === 'full' ? 1000 : 1000; // TEST: $10 — change back to 120000 : 50000 after testing
     const description =
       paymentOption === 'full'
         ? 'Reclaiming the Forbidden Retreat — Full Payment'
