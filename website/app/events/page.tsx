@@ -37,9 +37,8 @@ export default function EventsPage() {
                 Reclaiming the Forbidden is a 3-day immersive retreat for women navigating life after high-demand religion, rigid belief systems, or identities that required self-erasure to belong.
               </p>
               <p className="emphasis-line">This isn&rsquo;t about burning everything down.</p>
-              <p className="emphasis-line">And it&rsquo;s not about performing rebellion.</p>
               <p>
-                It&rsquo;s about reclaiming yourself &mdash; slowly, intentionally, on your terms.
+                It&rsquo;s about reclaiming yourself. Slowly, intentionally, on your terms.
               </p>
               <p>
                 Over the weekend we explore embodiment, internal authority, shame untangling, and what it means to walk the third path between obedience and chaos.
@@ -50,8 +49,8 @@ export default function EventsPage() {
             </div>
             <div className="about-image">
               <Image
-                src="/images/retreat-views.jpeg"
-                alt="Desert mountain views from the retreat venue"
+                src="/images/retreat-rear.jpg"
+                alt="Private luxury retreat home with pool at sunset"
                 width={600}
                 height={400}
                 className="section-photo"
@@ -86,7 +85,7 @@ export default function EventsPage() {
             <div className="flow-day">
               <h3>Friday Evening</h3>
               <p>Opening ceremony and container agreements</p>
-              <p>Followed by a nostalgic dance party &mdash; slumber party energy, music, laughter, movement</p>
+              <p>Followed by a nostalgic dance party. Slumber party energy, music, laughter, movement.</p>
             </div>
             <div className="flow-day">
               <h3>Saturday</h3>
@@ -211,14 +210,14 @@ export default function EventsPage() {
               <h3>On-Site Immersive Lodging (Add-On)</h3>
               <p className="lodging-note">Lodging is optional and separate from retreat tuition. Limited availability. First come, first served. All lodging payments are non-refundable.</p>
 
-              <h4 className="housing-option-title">Private King En-Suite &mdash; $995</h4>
+              <h4 className="housing-option-title">Private King En-Suite · $995</h4>
               <ul>
                 <li>3 nights, single occupancy (Friday&ndash;Monday morning)</li>
                 <li>Includes extended access through Sunday evening with departure Monday morning</li>
                 <li>Double occupancy may be available upon request for women attending together. Email <a href="mailto:Kimberly@thatdeeperfeeling.com">Kimberly@thatdeeperfeeling.com</a> for details.</li>
               </ul>
 
-              <h4 className="housing-option-title">The Slumber Party Room &mdash; $495 per bed</h4>
+              <h4 className="housing-option-title">The Slumber Party Room · $495 per bed</h4>
               <ul>
                 <li>3 nights, community style (Friday&ndash;Monday morning)</li>
                 <li>Three triple queen bunk beds create a cozy, intimate, sisterhood-style experience</li>
@@ -256,7 +255,7 @@ export default function EventsPage() {
             <li>You&rsquo;re tired of performing &ldquo;goodness&rdquo;</li>
             <li>You want to reconnect with your body without losing yourself</li>
             <li>You crave community without hierarchy</li>
-            <li>You&rsquo;re ready for reclamation &mdash; not reaction</li>
+            <li>You&rsquo;re ready for reclamation, not reaction</li>
           </ul>
           <p className="for-you-closing">
             If something in your body softened reading this&hellip;<br />
@@ -394,7 +393,7 @@ export default function EventsPage() {
                 We honor different stories, different stages of deconstruction, and different relationships to faith, sexuality, and identity.
               </p>
               <p>
-                This is a space for permission &mdash; permission to feel, to question, to soften, to expand, and to come home to yourself in your own time.
+                This is a space for permission. Permission to feel, to question, to soften, to expand, and to come home to yourself in your own time.
               </p>
             </div>
 
