@@ -13,8 +13,8 @@ function getResend() {
 }
 
 function getHousingLabel(housing: string): string {
-  if (housing === 'bunk') return 'Communal "Slumber Party" Bunk ($495)';
-  if (housing === 'king') return 'Luxury King Suite ($995)';
+  if (housing === 'bunk') return 'The Slumber Party Room ($495)';
+  if (housing === 'king') return 'Private King En-Suite ($995)';
   return 'None — arranging own accommodations';
 }
 

@@ -208,12 +208,27 @@ export default function EventsPage() {
             </div>
 
             <div className="accommodation-card">
-              <h3>On-Site Housing (Add-On)</h3>
-              <p className="lodging-note">Housing is optional and can be added during registration. Housing guests enjoy an optional Sunday evening stay.</p>
+              <h3>On-Site Immersive Lodging (Add-On)</h3>
+              <p className="lodging-note">Lodging is optional and separate from retreat tuition. Limited availability. First come, first served. All lodging payments are non-refundable.</p>
+
+              <h4 className="housing-option-title">Private King En-Suite &mdash; $995</h4>
               <ul>
-                <li><strong>Communal &ldquo;Slumber Party&rdquo; Bunk</strong> &mdash; $495 for 3 nights (Fri&ndash;Sun)</li>
-                <li><strong>Luxury King Suite</strong> &mdash; $995 for 3 nights (Fri&ndash;Sun) &middot; Only 3 available</li>
+                <li>3 nights, single occupancy (Friday&ndash;Monday morning)</li>
+                <li>Includes extended access through Sunday evening with departure Monday morning</li>
+                <li>Double occupancy may be available upon request for women attending together. Email <a href="mailto:Kimberly@thatdeeperfeeling.com">Kimberly@thatdeeperfeeling.com</a> for details.</li>
               </ul>
+
+              <h4 className="housing-option-title">The Slumber Party Room &mdash; $495 per bed</h4>
+              <ul>
+                <li>3 nights, community style (Friday&ndash;Monday morning)</li>
+                <li>Three triple queen bunk beds create a cozy, intimate, sisterhood-style experience</li>
+                <li>Best suited for women who value connection, shared energy, and playful closeness</li>
+              </ul>
+
+              <div className="housing-note">
+                <p>Retreat programming concludes Sunday at noon. For those staying on-site, Sunday afternoon and evening are intentionally unstructured integration time. Guests are welcome to enjoy the pool, hot tub, fire pit, and connection at their own pace.</p>
+                <p>Meals Sunday afternoon/evening and Monday morning are self-directed.</p>
+              </div>
             </div>
 
             <div className="policy-card">
@@ -860,7 +875,43 @@ export default function EventsPage() {
           font-size: 0.95rem;
           color: var(--neutral-warm-gray);
           font-style: italic;
-          margin-bottom: 1rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .housing-option-title {
+          font-size: 1.1rem;
+          color: var(--primary-burgundy);
+          font-weight: 600;
+          margin: 1.5rem 0 0.75rem;
+        }
+
+        .accommodation-card a {
+          color: var(--primary-burgundy);
+          text-decoration: underline;
+          text-underline-offset: 2px;
+        }
+
+        .accommodation-card a:hover {
+          color: var(--accent-terracotta);
+        }
+
+        .housing-note {
+          margin-top: 1.5rem;
+          padding: 1.25rem 1.5rem;
+          background: var(--neutral-cream);
+          border-radius: 0.5rem;
+          border-left: 3px solid var(--accent-gold);
+        }
+
+        .housing-note p {
+          font-size: 0.95rem;
+          color: var(--neutral-warm-gray);
+          line-height: 1.7;
+          margin: 0 0 0.75rem;
+        }
+
+        .housing-note p:last-child {
+          margin-bottom: 0;
         }
 
         .policy-card {

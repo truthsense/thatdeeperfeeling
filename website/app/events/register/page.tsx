@@ -261,11 +261,13 @@ export default function EventRegisterPage() {
 
             {/* Housing Option */}
             <div className="housing-section">
-              <h3>On-Site Housing <span className="optional-tag">(Optional)</span></h3>
+              <h3>On-Site Immersive Lodging <span className="optional-tag">(Optional)</span></h3>
               <p className="housing-intro">
-                Stay on-site at the private retreat home for the full experience. Housing guests
-                enjoy an optional Sunday evening of unstructured rest, connection, and integration
-                with free use of pool, hot tub, and all common areas.
+                Stay on-site at the private retreat home for the full experience.
+                Retreat programming concludes Sunday at noon. For housing guests, Sunday afternoon
+                and evening are intentionally unstructured integration time with free use of pool,
+                hot tub, fire pit, and all common areas. Departure Monday morning.
+                Meals Sunday afternoon/evening and Monday morning are self-directed.
               </p>
 
               <div className="payment-options">
@@ -298,9 +300,9 @@ export default function EventRegisterPage() {
                     onChange={() => setHousing('bunk')}
                   />
                   <div className="payment-option-content">
-                    <span className="payment-option-title">Communal &ldquo;Slumber Party&rdquo; Bunk &mdash; $495</span>
+                    <span className="payment-option-title">The Slumber Party Room &mdash; $495 per bed</span>
                     <span className="payment-option-desc">
-                      Shared bunk sleeping area. 3 nights (Friday&ndash;Sunday). Includes Sunday evening stay.
+                      Three triple queen bunk beds. Cozy, intimate, sisterhood-style. 3 nights (Friday&ndash;Monday morning).
                     </span>
                   </div>
                 </label>
@@ -318,7 +320,7 @@ export default function EventRegisterPage() {
                   />
                   <div className="payment-option-content">
                     <span className="payment-option-title">
-                      Luxury King Suite &mdash; $995
+                      Private King En-Suite &mdash; $995
                       {kingSuitesRemaining !== null && kingSuitesRemaining > 0 && (
                         <span className="availability-badge">{kingSuitesRemaining} of 3 remaining</span>
                       )}
@@ -327,7 +329,7 @@ export default function EventRegisterPage() {
                       )}
                     </span>
                     <span className="payment-option-desc">
-                      Private king suite. 3 nights (Friday&ndash;Sunday). Includes Sunday evening stay. Only 3 available.
+                      Private king en-suite, single occupancy. 3 nights (Friday&ndash;Monday morning). Only 3 available.
                     </span>
                   </div>
                 </label>

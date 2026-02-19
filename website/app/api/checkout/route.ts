@@ -67,8 +67,8 @@ export async function POST(req: NextRequest) {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'On-Site Housing — Communal "Slumber Party" Bunk',
-            description: '3 nights · Friday–Sunday',
+            name: 'On-Site Lodging — The Slumber Party Room',
+            description: '3 nights · Friday–Monday morning',
           },
           unit_amount: 49500, // $495
         },
@@ -79,8 +79,8 @@ export async function POST(req: NextRequest) {
         price_data: {
           currency: 'usd',
           product_data: {
-            name: 'On-Site Housing — Luxury King Suite',
-            description: '3 nights · Friday–Sunday',
+            name: 'On-Site Lodging — Private King En-Suite',
+            description: '3 nights · Friday–Monday morning',
           },
           unit_amount: 99500, // $995
         },

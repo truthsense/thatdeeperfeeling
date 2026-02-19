@@ -18,169 +18,241 @@ export default function PoliciesAndBoundariesPage() {
           {/* Scope of Practice */}
           <div className="policy-section">
             <h2>Scope of Practice</h2>
+            <p>Kimberly Bryant is an intimacy and embodiment coach.</p>
             <p>
-              Kimberly Bryant is a certified intimacy and embodiment coach. She is not a
-              licensed therapist, psychologist, psychiatrist, or medical professional.
+              While this work often complements therapy and can deepen therapeutic integration,
+              she is not a licensed therapist, psychologist, psychiatrist, psychoanalyst, or
+              medical professional.
             </p>
             <p>
-              This work is <strong>coaching</strong>&mdash;it is future-focused, exploratory,
-              and action-oriented. It is not clinical treatment. We do not diagnose or treat
-              mental health conditions.
+              Her work is experiential, somatic, and exploratory. It focuses on personal
+              responsibility, embodied awareness, relational patterns, power reclamation, and
+              nervous system integration.
             </p>
+            <p className="emphasis-line">This is coaching.</p>
+            <p>It is not clinical treatment, mental health therapy, diagnosis, or medical care.</p>
             <div className="important-notice">
               <p>
-                If you are in active crisis, experiencing untreated PTSD, or need clinical
-                mental health support, we will refer you to appropriate professional resources.
-                Coaching can complement therapy, but it is not a replacement for it.
+                If you are experiencing active crisis, require psychiatric support, or need medical
+                treatment, you will be referred to appropriate licensed professionals. Coaching can
+                work beautifully alongside therapy, but it is not a replacement for it.
               </p>
             </div>
           </div>
 
-          {/* Consent */}
+          {/* Personal Responsibility */}
           <div className="policy-section">
-            <h2>Consent &amp; Agency</h2>
+            <h2>Personal Responsibility</h2>
             <p>
-              Consent is the foundation of everything we do. In this space, you always have
-              full agency over what you explore and how far you go.
+              All participants are responsible for their own physical, emotional, and psychological
+              well-being.
             </p>
-            <ul>
-              <li><strong>Informed consent:</strong> Before any exercise, practice, or exploration, you will be clearly told what it involves so you can make an informed choice about participating.</li>
-              <li><strong>Ongoing consent:</strong> You can pause, adjust, or stop at any time&mdash;no explanation needed. A &ldquo;no&rdquo; or a &ldquo;not right now&rdquo; is always honored without question.</li>
-              <li><strong>No pressure:</strong> You will never be pushed past your boundaries. We move at the speed of your nervous system, not at the pace of an agenda.</li>
-              <li><strong>Reversible:</strong> Consent given can always be withdrawn. Saying yes once does not mean yes forever.</li>
-            </ul>
+            <p>
+              You are encouraged to move at your own pace. You are always allowed to pause, opt out,
+              modify an exercise, or step away.
+            </p>
+            <p className="emphasis-line">
+              This work invites depth. It does not require self-abandonment.
+            </p>
+            <p>
+              By participating in sessions, workshops, or retreats, you acknowledge that you are
+              choosing to engage voluntarily and take responsibility for your own experience.
+            </p>
           </div>
 
-          {/* Session Boundaries */}
+          {/* Consent & Boundaries */}
           <div className="policy-section">
-            <h2>Session Boundaries</h2>
-
-            <h3>Virtual Sessions (Zoom)</h3>
-            <ul>
-              <li>Sessions are conducted over Zoom with cameras on (unless otherwise agreed).</li>
-              <li>You are responsible for ensuring you are in a private, comfortable space for your session.</li>
-              <li>Sessions are not recorded by either party unless mutually agreed upon in writing.</li>
-              <li>Sessions begin and end on time. If you arrive late, the session will still end at the scheduled time.</li>
-            </ul>
-
-            <h3>Between-Session Communication</h3>
-            <ul>
-              <li>For containers that include Voxer support, messaging is available during agreed-upon hours.</li>
-              <li>Voxer is for reflection, check-ins, and support&mdash;not crisis intervention.</li>
-              <li>Response times are typically within 24 hours on business days.</li>
-              <li>Email communication is for scheduling, logistics, and non-urgent matters.</li>
-            </ul>
+            <h2>Consent &amp; Boundaries</h2>
+            <p>
+              Consent is foundational in all containers held by Kimberly Bryant.
+            </p>
+            <p className="emphasis-line">Nothing is ever required.</p>
+            <p>
+              All exercises are invitational. Clear communication is encouraged at all times.
+              You may say no, change your mind, ask questions, or request clarification.
+            </p>
+            <p>
+              Power dynamics, intimacy exploration, and embodiment work are handled with care and
+              transparency. Any exploration involving touch or partnered practice is optional and
+              discussed clearly beforehand.
+            </p>
+            <p className="emphasis-line">Your autonomy matters.</p>
           </div>
 
-          {/* Touch & Physical Boundaries */}
+          {/* Consent & Physical Contact */}
           <div className="policy-section">
-            <h2>Physical Boundaries</h2>
+            <h2>Consent &amp; Physical Contact</h2>
             <p>
-              For in-person retreats and events:
+              This retreat includes embodiment practices that may involve optional partner or
+              group-based exercises such as mirroring, grounding support, guided proximity, or
+              light, structured touch.
             </p>
+            <p>All physical interaction within this retreat is:</p>
             <ul>
-              <li>There is no physical touch between coach and participant unless explicitly discussed and consented to in advance (e.g., a grounding hand on the shoulder).</li>
-              <li>Exercises involving movement, breathwork, or somatic practices are always optional.</li>
-              <li>You are never required to remove clothing, engage in sexual activity, or participate in anything that crosses your personal boundaries.</li>
-              <li>If partner exercises are offered during group work, participation is always voluntary.</li>
+              <li>Fully consent-based</li>
+              <li>Clearly guided</li>
+              <li>Optional at all times</li>
             </ul>
+            <p>Participants are responsible for:</p>
+            <ul>
+              <li>Verbally communicating their boundaries</li>
+              <li>Asking for consent before initiating touch</li>
+              <li>Respecting a &ldquo;no&rdquo; immediately and without question</li>
+            </ul>
+            <p>
+              No participant is required to engage in any touch-based exercise. Observing, modifying,
+              or opting out is always available.
+            </p>
+            <p>
+              Facilitators will model consent language and provide clear structure around any physical
+              exercises.
+            </p>
+            <div className="important-notice">
+              <p>
+                Any violation of consent, coercion, or boundary crossing may result in immediate
+                removal from the retreat without refund.
+              </p>
+            </div>
+          </div>
+
+          {/* Eros & Container Integrity */}
+          <div className="policy-section">
+            <h2>Eros &amp; Container Integrity</h2>
+            <p>
+              This retreat explores embodiment and Eros as life force energy. Emotional, energetic,
+              and relational responses may arise as part of that exploration.
+            </p>
+            <p>
+              This is not a dating event and is not structured for romantic or sexual pairings.
+            </p>
+            <p className="emphasis-line">
+              The container prioritizes personal reclamation, self-connection, and mutual respect.
+            </p>
+            <p>
+              Participants agree to maintain clear boundaries and avoid pursuing romantic or sexual
+              dynamics during retreat programming hours.
+            </p>
+            <p>
+              The integrity of the container is essential to the safety and depth of the experience
+              for all women present.
+            </p>
+          </div>
+
+          {/* Emotional Safety */}
+          <div className="policy-section">
+            <h2>Emotional Safety &amp; Regulation</h2>
+            <p>
+              This work may bring up emotion, memory, sensation, or previously suppressed experiences.
+            </p>
+            <p className="emphasis-line">That is normal.</p>
+            <p>
+              You are encouraged to seek outside therapeutic support if deeper processing arises beyond
+              the scope of coaching.
+            </p>
+            <p>
+              Kimberly facilitates contained, intentional spaces for exploration &mdash; but she does
+              not diagnose, treat trauma, or provide psychotherapy.
+            </p>
           </div>
 
           {/* Confidentiality */}
           <div className="policy-section">
             <h2>Confidentiality</h2>
             <p>
-              Everything shared in sessions, group containers, and retreats is held in strict
-              confidence.
+              Confidentiality is honored within one-on-one sessions and expected within group containers.
             </p>
-            <ul>
-              <li>Your identity, session content, and personal disclosures are never shared without your explicit written consent.</li>
-              <li>Testimonials are only used with your written permission and can be anonymized upon request.</li>
-              <li>In group settings, all participants agree to maintain confidentiality. What is shared in the circle stays in the circle.</li>
-              <li>Brief session notes may be kept to support continuity between sessions. These notes are stored securely and are only accessible to Kimberly.</li>
-            </ul>
-
-            <h3>Exceptions to Confidentiality</h3>
             <p>
-              Confidentiality may be broken only in the following circumstances, as required by
-              law:
+              Participants agree to respect the privacy of others and not share personal stories,
+              disclosures, or identifying information outside of the container.
             </p>
-            <ul>
-              <li>Imminent risk of harm to yourself or others</li>
-              <li>Suspected abuse or neglect of a child or vulnerable adult</li>
-              <li>A valid court order</li>
-            </ul>
-          </div>
-
-          {/* Retreat-Specific Policies */}
-          <div className="policy-section">
-            <h2>Retreat &amp; Event Policies</h2>
-
-            <h3>Community Agreements</h3>
             <p>
-              All retreat participants agree to the following community standards:
-            </p>
-            <ul>
-              <li>Respect the privacy, boundaries, and consent of all participants</li>
-              <li>Refrain from using drugs or alcohol during retreat programming</li>
-              <li>Communicate directly if a conflict or concern arises</li>
-              <li>Participate in good faith and with an open heart</li>
-              <li>Follow the property rules and guidelines of the venue</li>
-            </ul>
-
-            <h3>Safety &amp; Wellbeing</h3>
-            <ul>
-              <li>If you have medical conditions, allergies, or accessibility needs, please disclose them during registration so we can accommodate you.</li>
-              <li>Emergency contact information is collected during registration and kept confidential.</li>
-              <li>If you feel unsafe at any point during a retreat, speak with Kimberly immediately.</li>
-              <li>Kimberly reserves the right to ask a participant to leave a retreat if their behavior compromises the safety or wellbeing of the group. In such cases, no refund will be issued.</li>
-            </ul>
-
-            <h3>Photography &amp; Media</h3>
-            <ul>
-              <li>Photos taken during retreats are for personal use only unless otherwise agreed.</li>
-              <li>We may take photos of shared spaces and general atmosphere for marketing purposes. Identifiable images of participants are never used without explicit consent.</li>
-              <li>Recording of sessions, ceremonies, or group work is not permitted.</li>
-            </ul>
-          </div>
-
-          {/* Scheduling */}
-          <div className="policy-section">
-            <h2>Scheduling &amp; Attendance</h2>
-            <ul>
-              <li><strong>Cancellations:</strong> Sessions may be cancelled or rescheduled with at least 48 hours&rsquo; notice. Sessions cancelled with less than 48 hours&rsquo; notice are forfeited.</li>
-              <li><strong>No-shows:</strong> If you do not show up for a scheduled session without prior notice, the session is forfeited.</li>
-              <li><strong>Late arrivals:</strong> Sessions will begin and end at the scheduled time regardless of late arrival.</li>
-              <li><strong>Rescheduling:</strong> We will do our best to accommodate rescheduling requests. Containers include flexibility within the agreed-upon timeframe.</li>
-            </ul>
-          </div>
-
-          {/* Right to Refuse */}
-          <div className="policy-section">
-            <h2>Right to Refer or Decline</h2>
-            <p>
-              Kimberly reserves the right to decline or discontinue services if:
-            </p>
-            <ul>
-              <li>The coaching relationship is no longer serving your highest good</li>
-              <li>Your needs fall outside the scope of coaching (e.g., require clinical support)</li>
-              <li>There is a pattern of missed sessions, unpaid invoices, or boundary violations</li>
-              <li>The safety of either party is at risk</li>
-            </ul>
-            <p>
-              In any of these cases, we will communicate openly and provide referrals where
-              appropriate.
+              Public testimonials or shared reflections will only be used with explicit permission.
             </p>
           </div>
 
-          {/* Mutual Respect */}
+          {/* Payments */}
           <div className="policy-section">
-            <h2>Mutual Respect</h2>
+            <h2>Payments &amp; Financial Policies</h2>
             <p>
-              This work requires trust and mutual respect. Just as you have the right to be
-              treated with dignity, compassion, and care, Kimberly expects the same in return.
-              Harassment, threats, or abusive language toward Kimberly or any participant will
-              result in immediate termination of the coaching relationship without refund.
+              All payments are required in advance unless otherwise arranged in writing.
+            </p>
+            <p>Deposits are non-refundable.</p>
+            <h3>For retreats and group experiences:</h3>
+            <ul>
+              <li>All payments are non-refundable due to the advance planning and limited capacity of these events.</li>
+              <li>If you are unable to attend a retreat, you may transfer your ticket to another eligible participant with prior written approval.</li>
+              <li>Payment plans must be completed according to the agreed schedule.</li>
+            </ul>
+          </div>
+
+          {/* Appropriate Conduct */}
+          <div className="policy-section">
+            <h2>Appropriate Conduct</h2>
+            <p>
+              That Deeper Feeling is a space for mature, respectful, emotionally responsible adults.
+            </p>
+            <p>
+              Harassment, manipulation, coercion, discrimination, intoxication during structured
+              programming, or violation of consent will not be tolerated.
+            </p>
+            <div className="important-notice">
+              <p>
+                Kimberly reserves the right to remove any participant from a session or retreat
+                without refund if behavior compromises the safety or integrity of the container.
+              </p>
+            </div>
+          </div>
+
+          {/* Physical Touch & Somatic Work */}
+          <div className="policy-section">
+            <h2>Physical Touch &amp; Somatic Work</h2>
+            <p>
+              Some offerings may include somatic practices or consensual, structured touch within
+              clearly defined boundaries.
+            </p>
+            <p>
+              Touch is never assumed. It is discussed beforehand. It requires verbal agreement. It
+              may be revoked at any time.
+            </p>
+            <p className="emphasis-line">
+              You are never obligated to participate in touch-based exercises.
+            </p>
+          </div>
+
+          {/* Media & Photography */}
+          <div className="policy-section">
+            <h2>Media &amp; Photography</h2>
+            <p>
+              Photos or videos at retreats or workshops will only be taken with clear consent.
+            </p>
+            <p>
+              No participant will be photographed, recorded, or publicly shared without prior agreement.
+            </p>
+          </div>
+
+          {/* Intellectual Property */}
+          <div className="policy-section">
+            <h2>Intellectual Property</h2>
+            <p>
+              All teachings, frameworks, written materials, exercises, and branded language shared
+              through That Deeper Feeling are the intellectual property of Kimberly Bryant.
+            </p>
+            <p>
+              Materials may not be copied, reproduced, distributed, or repurposed without written permission.
+            </p>
+          </div>
+
+          {/* Final Note */}
+          <div className="policy-section">
+            <h2>Final Note</h2>
+            <p className="emphasis-line">This work is about reclamation.</p>
+            <p className="emphasis-line">It is about embodied choice.</p>
+            <p>
+              It is about permission &mdash; permission to feel, to question, to soften, to expand,
+              and to choose yourself without apology.
+            </p>
+            <p>
+              Participation in any offering signifies agreement with these policies and boundaries.
             </p>
           </div>
 
@@ -262,6 +334,12 @@ export default function PoliciesAndBoundariesPage() {
           margin-bottom: 1rem;
         }
 
+        .emphasis-line {
+          font-style: italic;
+          font-weight: 500;
+          color: var(--primary-burgundy) !important;
+        }
+
         .policy-section ul {
           list-style: none;
           padding: 0;
@@ -316,6 +394,14 @@ export default function PoliciesAndBoundariesPage() {
           gap: 1rem;
           flex-wrap: wrap;
           margin-top: 2rem;
+        }
+
+        .cta-buttons a:global(.btn) {
+          text-decoration: none;
+        }
+
+        .cta-buttons a:global(.btn-primary) {
+          color: var(--neutral-soft-white);
         }
       `}</style>
     </>

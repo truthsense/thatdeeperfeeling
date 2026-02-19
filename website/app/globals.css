@@ -155,6 +155,7 @@ section {
   text-decoration: none;
 }
 
+a.btn-primary,
 .btn-primary {
   background: var(--primary-burgundy);
   color: var(--neutral-soft-white);
