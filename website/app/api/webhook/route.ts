@@ -72,10 +72,10 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Payment:</strong></td>
-                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $700 due by April 1, 2026'})</td>
+                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $750 due by April 1, 2026'})</td>
                   </tr>
                 </table>
-                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining balance of $700 is due by April 1, 2026. You will receive a payment link closer to the due date.</p>' : ''}
+                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining balance of $750 is due by April 1, 2026. You will receive a payment link closer to the due date.</p>' : ''}
                 <p>Kimberly will be in touch with retreat details, lodging information, and preparation materials as we get closer to the date.</p>
                 <p style="margin-top: 2rem;">With warmth,<br /><strong>Kimberly Bryant</strong><br /><em>That Deeper Feeling</em></p>
               </div>

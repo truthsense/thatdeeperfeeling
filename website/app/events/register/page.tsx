@@ -114,9 +114,9 @@ export default function EventRegisterPage() {
             <div className="detail-card">
               <h3>Investment</h3>
               <ul>
-                <li><strong>Full Price:</strong> $1,200</li>
+                <li><strong>Pay in Full:</strong> $1,050</li>
                 <li><strong>Deposit:</strong> $500 non-refundable to reserve your spot</li>
-                <li><strong>Balance Due:</strong> April 1, 2026</li>
+                <li><strong>Remaining Balance:</strong> $750 due by April 1, 2026</li>
                 <li>All payments are non-refundable</li>
                 <li>Spot transfers available with approval</li>
               </ul>
@@ -217,7 +217,7 @@ export default function EventRegisterPage() {
                   <div className="payment-option-content">
                     <span className="payment-option-title">$500 Deposit</span>
                     <span className="payment-option-desc">
-                      Reserve your spot now. Remaining $700 due by April 1, 2026.
+                      Reserve your spot now. Remaining $750 due by April 1, 2026.
                     </span>
                   </div>
                 </label>
@@ -233,9 +233,9 @@ export default function EventRegisterPage() {
                     onChange={() => setPaymentOption('full')}
                   />
                   <div className="payment-option-content">
-                    <span className="payment-option-title">$1,200 Pay in Full</span>
+                    <span className="payment-option-title">$1,050 Pay in Full</span>
                     <span className="payment-option-desc">
-                      Complete your registration in one payment.
+                      Save $200 by completing your registration in one payment.
                     </span>
                   </div>
                 </label>
@@ -257,7 +257,7 @@ export default function EventRegisterPage() {
             {error && <p className="error-message">{error}</p>}
 
             <button type="submit" className="btn btn-primary submit-btn" disabled={loading}>
-              {loading ? 'Processing...' : `Proceed to Payment — $${paymentOption === 'deposit' ? '500' : '1,200'}`}
+              {loading ? 'Processing...' : `Proceed to Payment — $${paymentOption === 'deposit' ? '500' : '1,050'}`}
             </button>
           </form>
         </div>

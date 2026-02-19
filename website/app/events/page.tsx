@@ -171,7 +171,7 @@ export default function EventsPage() {
             <h2>Investment</h2>
 
             <div className="price-card">
-              <h3>Retreat Ticket: $1,200</h3>
+              <h3>Retreat Ticket: $1,050</h3>
               <div className="includes">
                 <h4>Includes:</h4>
                 <ul>
@@ -198,8 +198,8 @@ export default function EventsPage() {
                 <p className="deposit-amount">$500 non-refundable deposit to reserve your spot</p>
               </div>
               <ul className="deposit-details">
-                <li>Remaining balance due by <strong>April 1, 2026</strong></li>
-                <li>Payment plans available at checkout</li>
+                <li>Remaining balance of <strong>$750</strong> due by <strong>April 1, 2026</strong></li>
+                <li>Or pay in full for <strong>$1,050</strong> and save $200</li>
                 <li>All balances must be paid in full by <strong>April 1, 2026</strong></li>
               </ul>
             </div>

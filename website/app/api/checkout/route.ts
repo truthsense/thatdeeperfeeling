@@ -20,10 +20,10 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const amount = paymentOption === 'full' ? 1000 : 1000; // TEST: $10 — change back to 120000 : 50000 after testing
+    const amount = paymentOption === 'full' ? 105000 : 50000; // cents
     const description =
       paymentOption === 'full'
-        ? 'Reclaiming the Forbidden Retreat — Full Payment'
+        ? 'Reclaiming the Forbidden Retreat — Full Payment ($1,050)'
         : 'Reclaiming the Forbidden Retreat — $500 Deposit';
 
     const session = await stripe.checkout.sessions.create({
