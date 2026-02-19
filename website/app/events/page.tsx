@@ -11,16 +11,16 @@ export default function EventsPage() {
         <div className="container content-container">
           <h1>Reclaiming the Forbidden</h1>
           <p className="hero-tagline">
-            Where Sensuality, Soul &amp; Surrender Meet
+            A Women&rsquo;s Retreat
           </p>
           <div className="hero-details">
-            <p className="hero-date">May 8&ndash;11, 2026</p>
+            <p className="hero-date">May 8&ndash;10, 2026</p>
             <p className="hero-location">St. George, Utah</p>
           </div>
           <p className="hero-hook">
-            If being a &ldquo;good girl&rdquo; kept you safe&hellip; but somewhere along the way you lost pieces of yourself&hellip;
+            If being a &ldquo;good girl&rdquo; kept you safe but cost you your truth&hellip;
           </p>
-          <p className="hero-declaration">This weekend is for you.</p>
+          <p className="hero-declaration">this weekend is for you.</p>
           <Button href="/events/register" variant="primary">
             Reserve Your Spot
           </Button>
@@ -34,18 +34,13 @@ export default function EventsPage() {
             <div className="about-inner">
               <h2>About the Retreat</h2>
               <p>
-                Reclaiming the Forbidden is a 3-day immersive retreat for women navigating life after high-demand religion, rigid belief systems, or identities that required self-erasure to belong.
+                Reclaiming the Forbidden is a three-day immersive retreat for women navigating life after high-demand religion, rigid belief systems, or environments where obedience was prioritized over self-trust.
               </p>
-              <p className="emphasis-line">This isn&rsquo;t about burning everything down.</p>
+              <p className="emphasis-line">This isn&rsquo;t about rebellion for rebellion&rsquo;s sake.</p>
+              <p className="emphasis-line">It&rsquo;s about reclamation.</p>
               <p>
-                It&rsquo;s about reclaiming yourself. Slowly, intentionally, on your terms.
+                It&rsquo;s about discovering that you don&rsquo;t have to white-knuckle obedience or free-fall into chaos. There is a third path.
               </p>
-              <p>
-                Over the weekend we explore embodiment, internal authority, shame untangling, and what it means to walk the third path between obedience and chaos.
-              </p>
-              <p>This work is grounded, contained, and deeply intentional.</p>
-              <p className="emphasis-line">Nothing is forced.</p>
-              <p className="emphasis-line">Everything is optional.</p>
             </div>
             <div className="about-image">
               <Image
@@ -64,16 +59,35 @@ export default function EventsPage() {
       <section className="retreat-explore">
         <div className="container content-container">
           <h2>What We&rsquo;ll Explore</h2>
+          <p className="explore-intro">Over the course of the weekend, we will:</p>
           <ul className="explore-list">
-            <li>Embodiment &amp; somatic awareness</li>
-            <li>Untangling shame from identity</li>
-            <li>Reclaiming internal authority</li>
-            <li>Eros as life force (not performance)</li>
-            <li>The &ldquo;two-degree shift&rdquo; toward sovereignty</li>
+            <li>Reconnect to the body through somatic and embodiment practices</li>
+            <li>Untangle shame from identity</li>
+            <li>Explore the Pendulum Framework (locked &rarr; severed &rarr; contained)</li>
+            <li>Reclaim internal authority</li>
+            <li>Experience Eros as life force, not performance</li>
+            <li>Integrate through guided teaching, small groups, and intentional reflection</li>
           </ul>
-          <p className="explore-note">
-            Through guided teaching, somatic movement, group dialogue, ritual, and intentional connection, you&rsquo;ll experience reclamation in a way that is embodied, clear, and sustainable.
-          </p>
+
+          <h3 className="and-yes-heading">And yes&hellip; there will be:</h3>
+          <ul className="and-yes-list">
+            <li>A dance party like it&rsquo;s 1999</li>
+            <li>Slumber party energy and sisterhood</li>
+            <li>Nourishing meals</li>
+            <li>Slow mornings</li>
+            <li>Real conversations</li>
+            <li>Play, depth, and containment</li>
+          </ul>
+
+          <div className="retreat-philosophy">
+            <p>This retreat is intentionally balanced between depth and joy.</p>
+            <p className="emphasis-line">We move slowly.</p>
+            <p className="emphasis-line">We prioritize nervous system safety.</p>
+            <p className="emphasis-line">We build trust before exploration.</p>
+            <p>You will not be forced to share.</p>
+            <p>You will not be pushed beyond your edge.</p>
+            <p className="emphasis-line">You will be invited into yourself.</p>
+          </div>
         </div>
       </section>
 
@@ -174,11 +188,11 @@ export default function EventsPage() {
             <h2>Investment</h2>
 
             <div className="price-card">
-              <h3>Retreat Ticket: $1,250</h3>
+              <h3>Retreat Ticket: $1,250*</h3>
               <div className="includes">
                 <h4>Includes:</h4>
                 <ul>
-                  <li>Full weekend programming (Friday&ndash;Sunday)</li>
+                  <li>Full retreat access (Friday&ndash;Sunday)</li>
                   <li>Saturday hot breakfast &amp; lunch and a sit-down 5-course meal made by a private chef</li>
                   <li>Sunday breakfast</li>
                   <li>Friday evening refreshments</li>
@@ -201,9 +215,9 @@ export default function EventsPage() {
                 <p className="deposit-amount">$500 non-refundable deposit to reserve your spot</p>
               </div>
               <ul className="deposit-details">
-                <li>Remaining balance of <strong>$850</strong> due by <strong>April 1, 2026</strong></li>
                 <li>All balances must be paid in full by <strong>April 1, 2026</strong></li>
               </ul>
+              <p className="payment-plan-note">*$1,350 if paid via payment plan ($500 deposit + $850 remaining balance)</p>
             </div>
 
             <div className="accommodation-card">
@@ -258,8 +272,8 @@ export default function EventsPage() {
             <li>You&rsquo;re ready for reclamation, not reaction</li>
           </ul>
           <p className="for-you-closing">
-            If something in your body softened reading this&hellip;<br />
-            this may be your invitation.
+            This is for the woman who is ready to reclaim what was once labeled &ldquo;forbidden&rdquo;&hellip;
+            and discover it was power all along.
           </p>
           <Button href="/events/register" variant="primary">
             Register Now
@@ -345,7 +359,7 @@ export default function EventsPage() {
               <h3>What is included in the base ticket?</h3>
               <p>The base ticket includes:</p>
               <ul>
-                <li>Full weekend programming (Friday evening through Sunday midday)</li>
+                <li>Full retreat access (Friday evening through Sunday midday)</li>
                 <li>Saturday breakfast and lunch</li>
                 <li>Saturday sit-down dinner</li>
                 <li>Sunday breakfast</li>
@@ -563,14 +577,57 @@ export default function EventsPage() {
           line-height: 1;
         }
 
-        .explore-note {
+        .explore-intro {
           text-align: center;
-          font-size: 1.1rem;
-          line-height: 1.8;
-          color: var(--neutral-warm-gray);
+          font-size: 1.15rem;
+          color: var(--neutral-charcoal);
+          margin-bottom: 1.5rem;
+        }
+
+        .and-yes-heading {
+          text-align: center;
+          font-size: 1.5rem;
+          color: var(--primary-burgundy);
+          margin: 2rem 0 1.5rem;
+          font-style: italic;
+        }
+
+        .and-yes-list {
+          list-style: none;
+          padding: 0;
+          max-width: 550px;
+          margin: 0 auto 2.5rem;
+        }
+
+        .and-yes-list li {
+          padding: 0.5rem 0;
+          padding-left: 2rem;
+          position: relative;
+          font-size: 1.15rem;
+          color: var(--neutral-charcoal);
+        }
+
+        .and-yes-list li::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          color: var(--accent-terracotta);
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+
+        .retreat-philosophy {
+          text-align: center;
           max-width: 650px;
           margin: 0 auto;
-          font-style: italic;
+          padding: 2rem 0;
+        }
+
+        .retreat-philosophy p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: var(--neutral-charcoal);
+          margin-bottom: 0.5rem;
         }
 
         /* Retreat Flow */
@@ -853,6 +910,14 @@ export default function EventsPage() {
           color: var(--accent-terracotta);
           font-size: 1.25rem;
           line-height: 1;
+        }
+
+        .payment-plan-note {
+          font-size: 0.9rem;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+          margin-top: 1rem;
+          text-align: center;
         }
 
         .accommodation-card {

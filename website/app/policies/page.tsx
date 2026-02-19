@@ -264,7 +264,7 @@ export default function PoliciesAndBoundariesPage() {
             </p>
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:thatdeeperfeeling@gmail.com">thatdeeperfeeling@gmail.com</a>
+              <a href="mailto:kimberly@thatdeeperfeeling.com">kimberly@thatdeeperfeeling.com</a>
             </p>
             <div className="cta-buttons">
               <a href="/consult" className="btn btn-primary">
@@ -366,7 +366,7 @@ export default function PoliciesAndBoundariesPage() {
           background: var(--accent-terracotta);
         }
 
-        .policy-section a {
+        .policy-section a:not(:global(.btn)) {
           color: var(--primary-burgundy);
           text-decoration: underline;
           text-underline-offset: 2px;

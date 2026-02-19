@@ -32,8 +32,8 @@ export default function ContactPage() {
               <p>
                 For general inquiries, press, or collaboration opportunities.
               </p>
-              <a href="mailto:thatdeeperfeeling@gmail.com" className="btn btn-secondary">
-                thatdeeperfeeling@gmail.com
+              <a href="mailto:kimberly@thatdeeperfeeling.com" className="btn btn-secondary">
+                kimberly@thatdeeperfeeling.com
               </a>
             </div>
 

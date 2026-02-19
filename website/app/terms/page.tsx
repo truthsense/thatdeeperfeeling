@@ -137,7 +137,7 @@ export default function TermsOfServicePage() {
             </p>
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:thatdeeperfeeling@gmail.com">thatdeeperfeeling@gmail.com</a>
+              <a href="mailto:kimberly@thatdeeperfeeling.com">kimberly@thatdeeperfeeling.com</a>
             </p>
           </div>
         </div>

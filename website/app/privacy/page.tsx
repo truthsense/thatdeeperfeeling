@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p>
               To exercise any of these rights, contact us at{' '}
-              <a href="mailto:thatdeeperfeeling@gmail.com">thatdeeperfeeling@gmail.com</a>.
+              <a href="mailto:kimberly@thatdeeperfeeling.com">kimberly@thatdeeperfeeling.com</a>.
             </p>
           </div>
 
@@ -159,7 +159,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:thatdeeperfeeling@gmail.com">thatdeeperfeeling@gmail.com</a>
+              <a href="mailto:kimberly@thatdeeperfeeling.com">kimberly@thatdeeperfeeling.com</a>
             </p>
           </div>
         </div>

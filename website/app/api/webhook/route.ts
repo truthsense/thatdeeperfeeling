@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Dates:</strong></td>
-                    <td style="padding: 0.5rem 0;">May 8–11, 2026</td>
+                    <td style="padding: 0.5rem 0;">May 8–10, 2026</td>
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Location:</strong></td>
@@ -121,7 +121,7 @@ export async function POST(req: NextRequest) {
 
       await resend.emails.send({
         from: 'That Deeper Feeling <noreply@thatdeeperfeeling.com>',
-        to: process.env.KIMBERLY_EMAIL || 'thatdeeperfeeling@gmail.com',
+        to: process.env.KIMBERLY_EMAIL || 'kimberly@thatdeeperfeeling.com',
         subject: `New Retreat Registration: ${name}`,
         html: `
           <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #2d2d2d;">

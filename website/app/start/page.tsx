@@ -10,10 +10,7 @@ export default function StartHerePage() {
         <div className="container content-container">
           <h1>Start Here</h1>
           <p className="hero-subtitle">
-            Welcome.
-          </p>
-          <p className="hero-subtitle">
-            If you've landed here, something in you is already listening.
+            If you&rsquo;ve landed here, something in you is already listening.
           </p>
         </div>
       </section>
@@ -22,9 +19,9 @@ export default function StartHerePage() {
       <section className="start-opening">
         <div className="container content-container">
           <p>
-            Maybe you've left a high-demand religion, relationship, or culture.
-            Maybe you've done the "right" things and still feel disconnected from your body, your desire, or your sense of self.
-            Maybe you're successful on the outside and quietly aching on the inside.
+            Maybe you&rsquo;ve left a high-demand religion, relationship, or culture.
+            Maybe you&rsquo;ve done the &ldquo;right&rdquo; things and still feel disconnected from your body, your desire, or your sense of self.
+            Maybe you feel successful on the outside and quietly aching on the inside.
           </p>
           <p>
             This space exists for that moment.
@@ -37,12 +34,10 @@ export default function StartHerePage() {
         <div className="container content-container">
           <h2>What This Work Is</h2>
           <p>
-            That Deeper Feeling is not therapy.
-            It's not performance.
-            It's not about fixing you.
+            That Deeper Feeling is not therapy. It&rsquo;s not performance. It&rsquo;s not about fixing you.
           </p>
           <p>
-            I offer private coaching and immersive containers rooted in nervous-system awareness, consent-based intimacy, somatic presence, and embodied authority.
+            I offer private coaching and immersive containers rooted in nervous-system awareness, consent-based intimacy, somatic presence, embodied authority, and conscious exploration of power, desire, and erotic energy.
           </p>
           <p>This work is about helping you:</p>
           <ul className="start-list">
@@ -61,18 +56,14 @@ export default function StartHerePage() {
           <h2>Who This Is For</h2>
           <p>This work may be for you if:</p>
           <ul className="start-list">
-            <li>You've left or are questioning a high-demand system and feel unmoored</li>
-            <li>You struggle to trust your body, your wants, or your "yes" and "no"</li>
+            <li>You&rsquo;ve left or are questioning a high-demand system</li>
+            <li>You struggle to trust your body, your wants, or your &ldquo;yes&rdquo; and &ldquo;no&rdquo;</li>
             <li>You feel disconnected from desire, pleasure, or aliveness</li>
-            <li>You're tired of self-abandoning to stay safe or loved</li>
-            <li>You want depth, honesty, and embodiment without shame or pressure</li>
+            <li>You&rsquo;re tired of self-abandoning to stay safe or loved</li>
+            <li>You want depth, honesty, and embodiment</li>
           </ul>
-          <p>
-            You don't need to be "spiritual."
-            You don't need to be kinky.
-            You don't need to know the language yet.
-          </p>
-          <p><strong>Curiosity is enough.</strong></p>
+          <p>You don&rsquo;t need to know the language yet.</p>
+          <p><strong>If something in you feels that curious pull&hellip; that&rsquo;s enough.</strong></p>
         </div>
       </section>
 
@@ -86,7 +77,7 @@ export default function StartHerePage() {
           <div className="definition">
             <p><strong>By kink-aware, I mean:</strong></p>
             <p>
-              We acknowledge power, choice, boundaries, and nervous system responses — without performance, coercion, or spectacle.
+              We acknowledge power, choice, boundaries, nervous system responses, and erotic energy as living dynamics that can be explored consciously, playfully, and with deep respect.
             </p>
           </div>
           <div className="definition">
@@ -98,10 +89,19 @@ export default function StartHerePage() {
           <div className="definition">
             <p><strong>By embodied, I mean:</strong></p>
             <p>
-              We don't just talk about change. We feel it, practice it, and integrate it.
+              We don&rsquo;t just talk about change. We feel it. We practice it.
             </p>
           </div>
-          <p>This work honors both tenderness and truth.</p>
+          <p>This work honors tenderness and truth.</p>
+          <div className="permission-list">
+            <p>We make space for play.</p>
+            <p>For curiosity.</p>
+            <p>For connection.</p>
+            <p>For choice.</p>
+            <p>For feeling.</p>
+            <p>For permission.</p>
+            <p>For moving slowly and intentionally into the parts of you that were once labeled &ldquo;too much&rdquo; or &ldquo;not allowed.&rdquo;</p>
+          </div>
         </div>
       </section>
 
@@ -112,46 +112,36 @@ export default function StartHerePage() {
           <p>
             The best place to start is a Curiosity Call.
           </p>
-          <p>This is a low-pressure conversation where we:</p>
-          <ul className="start-list">
-            <li>Slow things down</li>
-            <li>Get clear on what you're navigating</li>
-            <li>Explore whether working together feels right</li>
-          </ul>
           <p>
-            There is no obligation.
-            No convincing.
-            No pushing.
+            If something in you feels that curious pull&hellip;
           </p>
-          <p>Just a gentle entry point.</p>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Curiosity Call CTA */}
       <section className="start-cta">
         <div className="container content-container centered">
-          <h2>Book a Curiosity Call</h2>
-          <p>
-            A low-pressure space to slow down, ask questions, and feel into what's next.
-          </p>
+          <h2>Every journey begins with a Curiosity Call.</h2>
+          <div className="cta-poetry">
+            <p>A slow, intentional space.</p>
+            <p>Rooted in play.</p>
+            <p>Curiosity.</p>
+            <p>Connection.</p>
+            <p>Permission.</p>
+            <p>Choice.</p>
+          </div>
+          <div className="cta-grounding">
+            <p>We listen.</p>
+            <p>We feel.</p>
+            <p>We explore what&rsquo;s true.</p>
+          </div>
+          <div className="cta-investment">
+            <p className="investment-amount">Investment: $125</p>
+            <p className="investment-note">Applied toward your chosen container.</p>
+          </div>
           <Button href="/consult" variant="primary">
-            Book a Curiosity Call
+            Book Your Curiosity Call
           </Button>
-        </div>
-      </section>
-
-      {/* Gentle Note */}
-      <section className="start-section">
-        <div className="container content-container centered">
-          <h3>A Gentle Note</h3>
-          <p>
-            You don't need to be ready for everything.
-            You don't need to know where this leads.
-          </p>
-          <p>
-            You only need to be willing to listen to the part of you that brought you here.
-          </p>
-          <p><strong>That's enough.</strong></p>
         </div>
       </section>
 
@@ -283,6 +273,66 @@ export default function StartHerePage() {
 
         .centered {
           text-align: center;
+        }
+
+        .permission-list {
+          margin: 2rem 0;
+          text-align: center;
+        }
+
+        .permission-list p {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: var(--neutral-charcoal);
+          margin-bottom: 0.25rem;
+          font-style: italic;
+        }
+
+        .permission-list p:last-child {
+          margin-top: 1rem;
+          font-style: normal;
+          font-size: 1.05rem;
+          line-height: 1.8;
+        }
+
+        .cta-poetry {
+          margin: 2rem 0 1.5rem;
+        }
+
+        .cta-poetry p {
+          font-size: 1.1rem;
+          line-height: 1.4;
+          margin-bottom: 0.25rem;
+          color: var(--neutral-cream);
+          font-style: italic;
+        }
+
+        .cta-grounding {
+          margin-bottom: 2rem;
+        }
+
+        .cta-grounding p {
+          font-size: 1.15rem;
+          line-height: 1.4;
+          margin-bottom: 0.25rem;
+          color: var(--neutral-soft-white);
+        }
+
+        .cta-investment {
+          margin-bottom: 2rem;
+        }
+
+        .investment-amount {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: var(--neutral-soft-white);
+          margin-bottom: 0.25rem;
+        }
+
+        .investment-note {
+          font-size: 0.95rem;
+          color: var(--neutral-cream);
+          font-style: italic;
         }
       `}</style>
     </>

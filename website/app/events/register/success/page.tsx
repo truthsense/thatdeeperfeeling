@@ -26,9 +26,9 @@ function SuccessContent() {
             <ul>
               <li>You&rsquo;ll receive a confirmation email with your payment details shortly.</li>
               <li>Kimberly will reach out personally with retreat preparation materials, lodging details, and what to expect.</li>
-              <li>If you paid the $500 deposit, your remaining balance of $700 is due by <strong>April 1, 2026</strong>.</li>
+              <li>If you paid the $500 deposit, your remaining balance of $850 is due by <strong>April 1, 2026</strong>.</li>
               <li>Questions? Reach out at{' '}
-                <a href="mailto:thatdeeperfeeling@gmail.com">thatdeeperfeeling@gmail.com</a>
+                <a href="mailto:kimberly@thatdeeperfeeling.com">kimberly@thatdeeperfeeling.com</a>
               </li>
             </ul>
           </div>

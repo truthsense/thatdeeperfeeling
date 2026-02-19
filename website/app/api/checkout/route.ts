@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
           currency: 'usd',
           product_data: {
             name: retreatDescription,
-            description: 'May 8–11, 2026 · St. George, Utah',
+            description: 'May 8–10, 2026 · St. George, Utah',
           },
           unit_amount: retreatAmount,
         },
