@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function EventRegisterPage() {
   const [form, setForm] = useState({
@@ -14,11 +14,26 @@ export default function EventRegisterPage() {
     q5: '',
   });
   const [paymentOption, setPaymentOption] = useState<'deposit' | 'full'>('deposit');
+  const [housing, setHousing] = useState<'none' | 'bunk' | 'king'>('none');
+  const [kingSuitesRemaining, setKingSuitesRemaining] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  useEffect(() => {
+    fetch('/api/suites-available')
+      .then((res) => res.json())
+      .then((data) => setKingSuitesRemaining(data.remaining))
+      .catch(() => setKingSuitesRemaining(0));
+  }, []);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const getTotal = () => {
+    const retreatPrice = paymentOption === 'full' ? 1250 : 500;
+    const housingPrice = housing === 'bunk' ? 495 : housing === 'king' ? 995 : 0;
+    return retreatPrice + housingPrice;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -33,6 +48,7 @@ export default function EventRegisterPage() {
         body: JSON.stringify({
           ...form,
           paymentOption,
+          housing,
         }),
       });
 
@@ -80,7 +96,7 @@ export default function EventRegisterPage() {
       <section className="register-hero">
         <div className="container content-container">
           <h1>Register for Reclaiming the Forbidden</h1>
-          <p className="hero-tagline">May 8&ndash;10, 2026 &middot; St. George, Utah</p>
+          <p className="hero-tagline">May 8&ndash;11, 2026 &middot; St. George, Utah</p>
           <p className="hero-subtitle">
             A 3-day immersive retreat for women navigating life after high-demand religion,
             rigid belief systems, or identities that required self-erasure to belong.
@@ -99,26 +115,27 @@ export default function EventRegisterPage() {
                 <li>Embodiment practices &amp; sacred ritual</li>
                 <li>Community circle with fellow women</li>
                 <li>Opening &amp; closing ceremonies</li>
+                <li>Optional Sunday evening for rest &amp; integration</li>
                 <li>Post-retreat integration resources</li>
               </ul>
             </div>
             <div className="detail-card">
               <h3>Retreat Details</h3>
               <ul>
-                <li><strong>Dates:</strong> May 8&ndash;10, 2026</li>
+                <li><strong>Dates:</strong> May 8&ndash;11, 2026</li>
                 <li><strong>Location:</strong> Private residence, St. George, Utah</li>
                 <li><strong>Group Size:</strong> Limited to 20&ndash;25 women</li>
-                <li><strong>Lodging:</strong> Separate purchase (details provided after registration)</li>
+                <li><strong>Sunday Evening:</strong> Optional unstructured rest &amp; connection for housing guests</li>
               </ul>
             </div>
             <div className="detail-card">
               <h3>Investment</h3>
               <ul>
-                <li><strong>Pay in Full:</strong> $1,050</li>
-                <li><strong>Deposit:</strong> $500 non-refundable to reserve your spot</li>
-                <li><strong>Remaining Balance:</strong> $750 due by April 1, 2026</li>
+                <li><strong>Pay in Full:</strong> $1,250</li>
+                <li><strong>Deposit:</strong> $500 to reserve your spot</li>
+                <li><strong>Remaining Balance:</strong> $850 due by April 1, 2026</li>
+                <li>On-site housing available as add-on</li>
                 <li>All payments are non-refundable</li>
-                <li>Spot transfers available with approval</li>
               </ul>
             </div>
           </div>
@@ -217,7 +234,7 @@ export default function EventRegisterPage() {
                   <div className="payment-option-content">
                     <span className="payment-option-title">$500 Deposit</span>
                     <span className="payment-option-desc">
-                      Reserve your spot now. Remaining $750 due by April 1, 2026.
+                      Reserve your spot now. Remaining $850 due by April 1, 2026.
                     </span>
                   </div>
                 </label>
@@ -233,9 +250,84 @@ export default function EventRegisterPage() {
                     onChange={() => setPaymentOption('full')}
                   />
                   <div className="payment-option-content">
-                    <span className="payment-option-title">$1,050 Pay in Full</span>
+                    <span className="payment-option-title">$1,250 Pay in Full</span>
                     <span className="payment-option-desc">
-                      Save $200 by completing your registration in one payment.
+                      Complete your registration in one payment.
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            {/* Housing Option */}
+            <div className="housing-section">
+              <h3>On-Site Housing <span className="optional-tag">(Optional)</span></h3>
+              <p className="housing-intro">
+                Stay on-site at the private retreat home for the full experience. Housing guests
+                enjoy an optional Sunday evening of unstructured rest, connection, and integration
+                with free use of pool, hot tub, and all common areas.
+              </p>
+
+              <div className="payment-options">
+                <label
+                  className={`payment-option ${housing === 'none' ? 'selected' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="housing"
+                    value="none"
+                    checked={housing === 'none'}
+                    onChange={() => setHousing('none')}
+                  />
+                  <div className="payment-option-content">
+                    <span className="payment-option-title">No On-Site Housing</span>
+                    <span className="payment-option-desc">
+                      I&rsquo;ll arrange my own accommodations.
+                    </span>
+                  </div>
+                </label>
+
+                <label
+                  className={`payment-option ${housing === 'bunk' ? 'selected' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="housing"
+                    value="bunk"
+                    checked={housing === 'bunk'}
+                    onChange={() => setHousing('bunk')}
+                  />
+                  <div className="payment-option-content">
+                    <span className="payment-option-title">Communal &ldquo;Slumber Party&rdquo; Bunk &mdash; $495</span>
+                    <span className="payment-option-desc">
+                      Shared bunk sleeping area. 3 nights (Friday&ndash;Sunday). Includes Sunday evening stay.
+                    </span>
+                  </div>
+                </label>
+
+                <label
+                  className={`payment-option ${housing === 'king' ? 'selected' : ''} ${kingSuitesRemaining === 0 ? 'sold-out' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="housing"
+                    value="king"
+                    checked={housing === 'king'}
+                    onChange={() => setHousing('king')}
+                    disabled={kingSuitesRemaining === 0}
+                  />
+                  <div className="payment-option-content">
+                    <span className="payment-option-title">
+                      Luxury King Suite &mdash; $995
+                      {kingSuitesRemaining !== null && kingSuitesRemaining > 0 && (
+                        <span className="availability-badge">{kingSuitesRemaining} of 3 remaining</span>
+                      )}
+                      {kingSuitesRemaining === 0 && (
+                        <span className="sold-out-badge">Sold Out</span>
+                      )}
+                    </span>
+                    <span className="payment-option-desc">
+                      Private king suite. 3 nights (Friday&ndash;Sunday). Includes Sunday evening stay. Only 3 available.
                     </span>
                   </div>
                 </label>
@@ -257,7 +349,7 @@ export default function EventRegisterPage() {
             {error && <p className="error-message">{error}</p>}
 
             <button type="submit" className="btn btn-primary submit-btn" disabled={loading}>
-              {loading ? 'Processing...' : `Proceed to Payment — $${paymentOption === 'deposit' ? '500' : '1,050'}`}
+              {loading ? 'Processing...' : `Proceed to Payment — $${getTotal().toLocaleString()}`}
             </button>
           </form>
         </div>
@@ -446,16 +538,32 @@ export default function EventRegisterPage() {
           font-style: italic;
         }
 
-        /* Payment Options */
-        .payment-section {
+        /* Payment & Housing Options */
+        .payment-section,
+        .housing-section {
           margin-top: 3rem;
           padding-top: 3rem;
           border-top: 1px solid rgba(139, 58, 71, 0.1);
         }
 
-        .payment-section h3 {
+        .payment-section h3,
+        .housing-section h3 {
           font-size: 1.4rem;
           color: var(--primary-burgundy);
+          margin-bottom: 1.5rem;
+        }
+
+        .optional-tag {
+          font-size: 0.85rem;
+          font-weight: 400;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+        }
+
+        .housing-intro {
+          font-size: 1rem;
+          color: var(--neutral-warm-gray);
+          line-height: 1.7;
           margin-bottom: 1.5rem;
         }
 
@@ -487,6 +595,15 @@ export default function EventRegisterPage() {
           box-shadow: 0 0 0 3px rgba(139, 58, 71, 0.1);
         }
 
+        .payment-option.sold-out {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        .payment-option.sold-out:hover {
+          border-color: var(--secondary-taupe);
+        }
+
         .payment-option input[type="radio"] {
           margin-top: 0.25rem;
           accent-color: var(--primary-burgundy);
@@ -511,6 +628,30 @@ export default function EventRegisterPage() {
           font-size: 0.9rem;
           color: var(--neutral-warm-gray);
           line-height: 1.5;
+        }
+
+        .availability-badge {
+          display: inline-block;
+          font-size: 0.75rem;
+          font-weight: 500;
+          color: var(--accent-terracotta);
+          background: rgba(196, 149, 106, 0.15);
+          padding: 0.15rem 0.5rem;
+          border-radius: 1rem;
+          margin-left: 0.5rem;
+          vertical-align: middle;
+        }
+
+        .sold-out-badge {
+          display: inline-block;
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: #c0392b;
+          background: #fdf0ef;
+          padding: 0.15rem 0.5rem;
+          border-radius: 1rem;
+          margin-left: 0.5rem;
+          vertical-align: middle;
         }
 
         /* Policy Note */

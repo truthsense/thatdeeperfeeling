@@ -12,6 +12,12 @@ function getResend() {
   return new Resend(process.env.RESEND_API_KEY);
 }
 
+function getHousingLabel(housing: string): string {
+  if (housing === 'bunk') return 'Communal "Slumber Party" Bunk ($495)';
+  if (housing === 'king') return 'Luxury King Suite ($995)';
+  return 'None — arranging own accommodations';
+}
+
 export async function POST(req: NextRequest) {
   const stripe = getStripe();
   const resend = getResend();
@@ -39,7 +45,9 @@ export async function POST(req: NextRequest) {
     const email = metadata.email || session.customer_email || '';
     const phone = metadata.phone || '';
     const paymentOption = metadata.paymentOption || 'deposit';
+    const housing = metadata.housing || 'none';
     const amountPaid = session.amount_total ? `$${(session.amount_total / 100).toFixed(2)}` : '';
+    const housingLabel = getHousingLabel(housing);
 
     // Email to attendee
     if (email) {
@@ -64,7 +72,7 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Dates:</strong></td>
-                    <td style="padding: 0.5rem 0;">May 8–10, 2026</td>
+                    <td style="padding: 0.5rem 0;">May 8–11, 2026</td>
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Location:</strong></td>
@@ -72,10 +80,15 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Payment:</strong></td>
-                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $750 due by April 1, 2026'})</td>
+                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $850 due by April 1, 2026'})</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 0.5rem 0; color: #888;"><strong>Housing:</strong></td>
+                    <td style="padding: 0.5rem 0;">${housingLabel}</td>
                   </tr>
                 </table>
-                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining balance of $750 is due by April 1, 2026. You will receive a payment link closer to the due date.</p>' : ''}
+                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining retreat balance of $850 is due by April 1, 2026. You will receive a payment link closer to the due date.</p>' : ''}
+                ${housing !== 'none' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;">Your on-site housing includes an optional Sunday evening stay for unstructured rest, connection, and integration with free use of pool, hot tub, and all common areas.</p>' : ''}
                 <p>Kimberly will be in touch with retreat details, lodging information, and preparation materials as we get closer to the date.</p>
                 <p style="margin-top: 2rem;">With warmth,<br /><strong>Kimberly Bryant</strong><br /><em>That Deeper Feeling</em></p>
               </div>
@@ -118,6 +131,7 @@ export async function POST(req: NextRequest) {
               <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Email:</strong></td><td style="padding: 0.5rem 0;"><a href="mailto:${email}">${email}</a></td></tr>
               <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Phone:</strong></td><td style="padding: 0.5rem 0;">${phone}</td></tr>
               <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Payment:</strong></td><td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit'})</td></tr>
+              <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Housing:</strong></td><td style="padding: 0.5rem 0;">${housingLabel}</td></tr>
             </table>
             ${questionsHtml ? `<h3 style="color: #8B3A47; margin-top: 2rem;">Reflection Responses</h3>${questionsHtml}` : ''}
           </div>

@@ -14,7 +14,7 @@ export default function EventsPage() {
             Where Sensuality, Soul &amp; Surrender Meet
           </p>
           <div className="hero-details">
-            <p className="hero-date">May 8&ndash;10, 2026</p>
+            <p className="hero-date">May 8&ndash;11, 2026</p>
             <p className="hero-location">St. George, Utah</p>
           </div>
           <p className="hero-hook">
@@ -104,8 +104,12 @@ export default function EventsPage() {
               <ul>
                 <li>Grounded integration</li>
                 <li>Closing ceremony</li>
-                <li>Departure by midday</li>
+                <li>Departure by midday for non-housing guests</li>
               </ul>
+              <div className="sunday-evening">
+                <h4>Sunday Evening <span className="optional-label">(Housing Guests)</span></h4>
+                <p>Unstructured rest, connecting, and integration time with free use of pool, hot tub, and all common areas.</p>
+              </div>
             </div>
           </div>
           <div className="flow-images">
@@ -171,7 +175,7 @@ export default function EventsPage() {
             <h2>Investment</h2>
 
             <div className="price-card">
-              <h3>Retreat Ticket: $1,050</h3>
+              <h3>Retreat Ticket: $1,250</h3>
               <div className="includes">
                 <h4>Includes:</h4>
                 <ul>
@@ -198,18 +202,17 @@ export default function EventsPage() {
                 <p className="deposit-amount">$500 non-refundable deposit to reserve your spot</p>
               </div>
               <ul className="deposit-details">
-                <li>Remaining balance of <strong>$750</strong> due by <strong>April 1, 2026</strong></li>
-                <li>Or pay in full for <strong>$1,050</strong> and save $200</li>
+                <li>Remaining balance of <strong>$850</strong> due by <strong>April 1, 2026</strong></li>
                 <li>All balances must be paid in full by <strong>April 1, 2026</strong></li>
               </ul>
             </div>
 
             <div className="accommodation-card">
-              <h3>On-Site Lodging (Separate Purchase)</h3>
-              <p className="lodging-note">Lodging is optional and purchased separately from your retreat ticket.</p>
+              <h3>On-Site Housing (Add-On)</h3>
+              <p className="lodging-note">Housing is optional and can be added during registration. Housing guests enjoy an optional Sunday evening stay.</p>
               <ul>
-                <li><strong>Premium King Suites</strong> &mdash; Single &amp; Double Occupancy</li>
-                <li><strong>&ldquo;Slumber Party&rdquo; Bunk Room</strong> option for group bookings</li>
+                <li><strong>Communal &ldquo;Slumber Party&rdquo; Bunk</strong> &mdash; $495 for 3 nights (Fri&ndash;Sun)</li>
+                <li><strong>Luxury King Suite</strong> &mdash; $995 for 3 nights (Fri&ndash;Sun) &middot; Only 3 available</li>
               </ul>
             </div>
 
@@ -617,6 +620,32 @@ export default function EventsPage() {
           color: var(--accent-terracotta);
           font-size: 1.25rem;
           line-height: 1;
+        }
+
+        .sunday-evening {
+          margin-top: 1.25rem;
+          padding-top: 1rem;
+          border-top: 1px dashed var(--secondary-taupe);
+        }
+
+        .sunday-evening h4 {
+          font-size: 1.1rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 0.5rem;
+        }
+
+        .optional-label {
+          font-size: 0.85rem;
+          font-weight: 400;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+        }
+
+        .sunday-evening p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: var(--neutral-charcoal);
+          margin: 0;
         }
 
         .flow-images {
