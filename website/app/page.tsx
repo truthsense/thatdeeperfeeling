@@ -12,19 +12,33 @@ export default function Home() {
           <div className="hero-layout">
             <div className="hero-content">
               <h1 className="hero-title">That Deeper Feeling</h1>
+              <p className="hero-tagline">
+                Where sensuality, soul and surrender meet.
+              </p>
               <p className="hero-subheadline">
-                I offer private coaching and immersive containers for people reclaiming their power, desire, and embodied authority after leaving high-demand systems.
+                For those ready to reclaim the parts of you that have been forbidden.
+              </p>
+              <div className="hero-poetry">
+                <p>For those who learned to shrink in order to belong.</p>
+                <p>For those who have felt themselves go quiet.</p>
+                <p>For those who know there is more.</p>
+              </div>
+              <p className="hero-supporting">
+                Where the power around your mental, emotional, physical, spiritual and sexual energy can be reclaimed.
               </p>
               <p className="hero-supporting">
-                For those unraveling the binds of high-demand religion, culture, or conditioning and reclaiming trust in the body, desire, and inner truth.
+                Where your voice, desires, power and self trust return.
+              </p>
+              <p className="hero-supporting">
+                Through curiosity, play and embodied exploration.
+              </p>
+              <p className="hero-pull">
+                If something in you feels that curious pull&hellip; you&rsquo;re in the right place.
               </p>
               <div className="hero-cta">
                 <Button href="/consult" variant="primary">
                   Book a Curiosity Call
                 </Button>
-                <p className="cta-subtext">
-                  A low-pressure space to slow down, ask questions, and feel into what's next.
-                </p>
               </div>
             </div>
             <div className="hero-image">
@@ -44,13 +58,13 @@ export default function Home() {
       {/* Who This Is For */}
       <section className="section-who">
         <div className="container content-container">
-          <h2 className="section-title">This work may be for you if you&rsquo;re:</h2>
+          <h2 className="section-title">This work may be for you if&hellip;</h2>
           <ul className="who-list">
-            <li>Deconstructing a high-demand religion, culture, or relational dynamic</li>
-            <li>Tired of outsourcing your sense of safety, worth, or authority</li>
-            <li>Disconnected from your body, desire, or inner truth</li>
-            <li>Curious about intimacy, power, and presence beyond shame or performance</li>
-            <li>Ready for depth, honesty, and embodied exploration</li>
+            <li>You&rsquo;re deconstructing something you once gave your life to</li>
+            <li>You&rsquo;re tired of handing your safety, worth, or authority to someone else</li>
+            <li>You feel disconnected from your desire, your voice, or your inner truth</li>
+            <li>You&rsquo;re curious about intimacy, power, and presence beyond shame or performance</li>
+            <li>You&rsquo;re ready for depth, honesty, and embodied exploration</li>
           </ul>
         </div>
       </section>
@@ -86,8 +100,7 @@ export default function Home() {
             This work is rooted in consent-centered, body-led practices that honor nervous system awareness, pacing, and choice.
           </p>
           <p className="approach-statement">
-            Rather than overriding or fixing, we listen.<br />
-            Rather than outsourcing authority, we bring it home.
+            We slow down, move with awareness, and allow authority to be reclaimed from the inside out.
           </p>
         </div>
       </section>
@@ -97,65 +110,46 @@ export default function Home() {
         <div className="container content-container">
           <h2 className="containers-title">Ways We Can Work Together</h2>
 
-          <h3 className="containers-category">Private Coaching</h3>
-
           <div className="container-card">
             <div className="container-header">
               <h4>Return to Power</h4>
-              <span className="container-type">6-Month Container</span>
             </div>
             <p className="container-description">
-              Deep, sustained transformation for reclaiming sovereignty and embodying pleasure. This container holds space for profound shifts in how you relate to power, desire, intimacy, and your own body. For those ready to go all the way.
+              A six month private container for rebuilding self trust, desire, and embodied authority from the inside out.
             </p>
           </div>
 
           <div className="container-card">
             <div className="container-header">
               <h4>Edgewalker</h4>
-              <span className="container-type">3-Month Container</span>
             </div>
             <p className="container-description">
-              Explore a specific edge—desire, kink dynamics, or pleasure reclamation. Perfect for exploring one focused area of your intimacy journey, whether it&rsquo;s communication, power dynamics, or healing your relationship with pleasure.
+              A three month private journey for those ready to explore power, intimacy, and identity at the edge of growth.
             </p>
           </div>
 
           <div className="container-card">
             <div className="container-header">
               <h4>Sacred Eruption</h4>
-              <span className="container-type">Single Session</span>
             </div>
             <p className="container-description">
-              A powerful, contained exploration for a specific breakthrough. One intensive session for addressing a specific block, question, or moment of transformation. Ideal for focused work on a particular edge.
-            </p>
-          </div>
-
-          <h3 className="containers-category">Community & Immersive Experiences</h3>
-
-          <div className="container-card">
-            <div className="container-header">
-              <h4>Flicker and Flame</h4>
-              <span className="container-type">Online Membership</span>
-            </div>
-            <p className="container-description">
-              Community, resources, and monthly workshops for ongoing exploration. A sacred space for continuous learning, connection, and embodiment with a community of conscious explorers.
+              A single deep dive immersion for focused, embodied breakthrough work.
             </p>
           </div>
 
           <div className="container-card">
             <div className="container-header">
-              <h4>Into the Embers</h4>
-              <span className="container-type">In-Person Gatherings</span>
+              <h4>Reclaiming the Forbidden</h4>
             </div>
             <p className="container-description">
-              Sacred group containers for embodied intimacy and conscious kink exploration. Multi-day immersive experiences with deep group work, somatic practices, and facilitated exploration.
+              In person workshops, retreats, and gatherings where we explore voice, desire, and power in real time.
             </p>
           </div>
 
-          <div className="containers-consult">
-            <h3>Not Sure Which Container Is Right for You?</h3>
-            <p>
-              Book a Curiosity Call and we&rsquo;ll explore your goals, answer your questions, and help you choose the path that feels most aligned.
-            </p>
+          <div className="containers-closing">
+            <p>Rooted in choice.</p>
+            <p>Held with intention.</p>
+            <p>Balanced between depth and play.</p>
           </div>
         </div>
       </section>
@@ -163,16 +157,16 @@ export default function Home() {
       {/* Final CTA */}
       <section className="section-final-cta">
         <div className="container content-container centered">
-          <h2>Ready to Begin?</h2>
+          <h2>Not sure where to begin?</h2>
           <p className="final-cta-text">
-            Book a Curiosity Call to explore working together and see if one of these containers feels aligned for where you are right now.
+            Every journey starts with a Curiosity Call.
+          </p>
+          <p className="final-cta-subtext">
+            A slow, intentional space to get curious and feel what&rsquo;s true.
           </p>
           <Button href="/consult" variant="primary">
-            Book a Curiosity Call
+            Book Your Curiosity Call
           </Button>
-          <p className="cta-subtext-footer">
-            A low-pressure space to slow down, ask questions, and feel into what's next.
-          </p>
         </div>
       </section>
 
@@ -220,6 +214,14 @@ export default function Home() {
           color: var(--primary-burgundy);
         }
 
+        .hero-tagline {
+          font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+          color: var(--primary-wine);
+          font-style: italic;
+          margin-bottom: 2rem;
+          line-height: 1.6;
+        }
+
         .hero-subheadline {
           font-size: clamp(1.1rem, 2vw, 1.3rem);
           color: var(--neutral-charcoal);
@@ -228,10 +230,31 @@ export default function Home() {
           font-weight: 500;
         }
 
+        .hero-poetry {
+          margin-bottom: 2rem;
+        }
+
+        .hero-poetry p {
+          font-size: clamp(1rem, 1.8vw, 1.1rem);
+          color: var(--neutral-warm-gray);
+          line-height: 1.7;
+          margin-bottom: 0.25rem;
+          font-style: italic;
+        }
+
         .hero-supporting {
           font-size: clamp(0.95rem, 1.8vw, 1.1rem);
-          color: var(--neutral-warm-gray);
-          margin-bottom: 2.5rem;
+          color: var(--neutral-charcoal);
+          margin-bottom: 0.75rem;
+          line-height: 1.7;
+        }
+
+        .hero-pull {
+          font-size: clamp(1rem, 1.8vw, 1.15rem);
+          color: var(--primary-wine);
+          font-weight: 500;
+          margin-top: 1.5rem;
+          margin-bottom: 2rem;
           line-height: 1.7;
         }
 
@@ -253,13 +276,6 @@ export default function Home() {
           color: var(--neutral-warm-gray);
           font-style: italic;
           margin: 0;
-        }
-
-        .cta-subtext-footer {
-          font-size: 0.95rem;
-          color: var(--neutral-warm-gray);
-          font-style: italic;
-          margin-top: 0.75rem;
         }
 
         .hero-image {
@@ -399,20 +415,6 @@ export default function Home() {
           margin-bottom: 3rem;
         }
 
-        .containers-category {
-          font-size: 1.1rem;
-          color: var(--neutral-warm-gray);
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          margin-bottom: 1.5rem;
-          margin-top: 2.5rem;
-          font-weight: 600;
-        }
-
-        .containers-category:first-of-type {
-          margin-top: 0;
-        }
-
         .container-card {
           background: white;
           padding: 1.75rem 2rem;
@@ -423,25 +425,13 @@ export default function Home() {
         }
 
         .container-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
           margin-bottom: 0.75rem;
-          flex-wrap: wrap;
-          gap: 0.5rem;
         }
 
         .container-card h4 {
           font-size: 1.4rem;
           color: var(--primary-burgundy);
           margin: 0;
-        }
-
-        .container-type {
-          font-size: 0.9rem;
-          color: var(--accent-terracotta);
-          font-weight: 600;
-          text-align: right;
         }
 
         .container-description {
@@ -451,30 +441,17 @@ export default function Home() {
           margin: 0;
         }
 
-        .containers-consult {
-          background: white;
-          padding: 2.5rem;
-          border-radius: 1rem;
+        .containers-closing {
           text-align: center;
           margin-top: 3rem;
-          box-shadow: 0 10px 30px rgba(139, 58, 71, 0.12);
-          border-top: 4px solid var(--primary-burgundy);
         }
 
-        .containers-consult h3 {
-          font-size: 1.5rem;
-          color: var(--primary-burgundy);
-          margin-bottom: 1rem;
-        }
-
-        .containers-consult p {
-          font-size: 1.05rem;
-          color: var(--neutral-charcoal);
-          line-height: 1.7;
-          margin-bottom: 1.5rem;
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
+        .containers-closing p {
+          font-size: 1.1rem;
+          line-height: 1.5;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+          margin-bottom: 0.25rem;
         }
 
         /* Final CTA */
@@ -494,12 +471,20 @@ export default function Home() {
         }
 
         .final-cta-text {
-          font-size: 1.15rem;
+          font-size: 1.2rem;
           color: var(--neutral-charcoal);
-          margin-bottom: 2rem;
+          margin-bottom: 0.5rem;
           max-width: 700px;
           margin-left: auto;
           margin-right: auto;
+          line-height: 1.7;
+        }
+
+        .final-cta-subtext {
+          font-size: 1.05rem;
+          color: var(--neutral-warm-gray);
+          font-style: italic;
+          margin-bottom: 2rem;
           line-height: 1.7;
         }
       `}</style>
