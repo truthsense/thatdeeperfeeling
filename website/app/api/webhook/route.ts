@@ -136,7 +136,7 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Dates:</strong></td>
-                    <td style="padding: 0.5rem 0;">May 8–10, 2026</td>
+                    <td style="padding: 0.5rem 0;">April 24–26, 2026</td>
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Location:</strong></td>

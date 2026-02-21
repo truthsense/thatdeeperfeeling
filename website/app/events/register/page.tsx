@@ -96,7 +96,7 @@ export default function EventRegisterPage() {
       <section className="register-hero">
         <div className="container content-container">
           <h1>Register for Reclaiming the Forbidden</h1>
-          <p className="hero-tagline">May 8&ndash;10, 2026 &middot; St. George, Utah</p>
+          <p className="hero-tagline">April 24&ndash;26, 2026 &middot; St. George, Utah</p>
           <p className="hero-subtitle">
             A 3-day immersive retreat for women navigating life after high-demand religion,
             rigid belief systems, or identities that required self-erasure to belong.
@@ -122,7 +122,7 @@ export default function EventRegisterPage() {
             <div className="detail-card">
               <h3>Retreat Details</h3>
               <ul>
-                <li><strong>Dates:</strong> May 8&ndash;10, 2026</li>
+                <li><strong>Dates:</strong> April 24&ndash;26, 2026</li>
                 <li><strong>Location:</strong> Private residence, St. George, Utah</li>
                 <li><strong>Group Size:</strong> Limited to 20&ndash;25 women</li>
                 <li><strong>Sunday Evening:</strong> Optional unstructured rest &amp; connection for housing guests</li>

@@ -14,7 +14,7 @@ export default function EventsPage() {
             A Women&rsquo;s Retreat
           </p>
           <div className="hero-details">
-            <p className="hero-date">May 8&ndash;10, 2026</p>
+            <p className="hero-date">April 24&ndash;26, 2026</p>
             <p className="hero-location">St. George, Utah</p>
           </div>
           <p className="hero-hook">
