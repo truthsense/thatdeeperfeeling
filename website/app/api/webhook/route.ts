@@ -144,14 +144,14 @@ export async function POST(req: NextRequest) {
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Payment:</strong></td>
-                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $850 due by April 1, 2026'})</td>
+                    <td style="padding: 0.5rem 0;">${amountPaid} (${paymentOption === 'full' ? 'Paid in Full' : 'Deposit — Balance of $950 due by April 10, 2026'})</td>
                   </tr>
                   <tr>
                     <td style="padding: 0.5rem 0; color: #888;"><strong>Housing:</strong></td>
                     <td style="padding: 0.5rem 0;">${housingLabel}</td>
                   </tr>
                 </table>
-                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining retreat balance of $850 is due by April 1, 2026. You will receive a payment link closer to the due date.</p>' : ''}
+                ${paymentOption === 'deposit' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;"><strong>Reminder:</strong> Your remaining retreat balance of $950 is due by April 10, 2026. You will receive a payment link closer to the due date.</p>' : ''}
                 ${housing !== 'none' ? '<p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;">Your on-site housing includes an optional Sunday evening stay for unstructured rest, connection, and integration with free use of pool, hot tub, and all common areas.</p>' : ''}
                 <p>Kimberly will be in touch with retreat details, lodging information, and preparation materials as we get closer to the date.</p>
                 <p style="margin-top: 2rem;">With warmth,<br /><strong>Kimberly Bryant</strong><br /><em>That Deeper Feeling</em></p>

@@ -91,41 +91,94 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* Retreat Flow */}
-      <section className="retreat-flow">
+      {/* The Framework Behind This Work */}
+      <section className="retreat-framework">
         <div className="container content-container">
-          <h2>Retreat Flow</h2>
-          <div className="flow-grid">
-            <div className="flow-day">
-              <h3>Friday Evening</h3>
-              <p>Opening ceremony and container agreements</p>
-              <p>Followed by a nostalgic dance party. Slumber party energy, music, laughter, movement.</p>
+          <h2>The Framework Behind This Work</h2>
+          <p>This retreat draws from the foundational framework behind That Deeper Feeling.</p>
+          <p>Through my own journey of leaving high-demand religion and navigating the space between identities, I began noticing something important.</p>
+          <p className="emphasis-line">Most systems treat the human experience in pieces.</p>
+          <div className="framework-separations">
+            <p>Mental health is separated from emotional healing.</p>
+            <p>Spirituality is separated from sexuality.</p>
+            <p>The body is separated from belief.</p>
+          </div>
+          <p>But in real life, these parts of us are deeply connected.</p>
+          <div className="framework-connections">
+            <p>A belief system can shape our sexuality.</p>
+            <p>Emotional wounds can live in the body.</p>
+            <p>Spiritual identity can influence personal power.</p>
+          </div>
+          <p>The work I guide people through explores the full human experience across five core energies:</p>
+          <ul className="energy-list">
+            <li>Mental</li>
+            <li>Emotional</li>
+            <li>Physical</li>
+            <li>Spiritual</li>
+            <li>Sexual</li>
+          </ul>
+          <p>These energies are constantly interacting with one another.</p>
+          <p>When one area shifts, the others often begin to move as well.</p>
+
+          <h3 className="spine-heading">The SPINE Pathway</h3>
+          <p>The larger body of work behind That Deeper Feeling is structured through a pathway called SPINE.</p>
+          <ul className="spine-list">
+            <li><strong>S</strong>overeignty</li>
+            <li><strong>P</strong>lay</li>
+            <li><strong>I</strong>ntegration</li>
+            <li><strong>N</strong>avigation</li>
+            <li><strong>E</strong>quilibrium</li>
+          </ul>
+          <p>This retreat focuses primarily on the first two stages of that journey.</p>
+          <div className="spine-focus">
+            <div className="spine-stage">
+              <h4>Sovereignty</h4>
+              <p>Reclaiming authority over your life, your voice, your body, and your choices.</p>
             </div>
-            <div className="flow-day">
-              <h3>Saturday</h3>
-              <ul>
-                <li>Nourishing breakfast</li>
-                <li>Somatic embodiment session with guest facilitator Sommer (S-Factor + trauma-informed somatics)</li>
-                <li>Guided frameworks and integration</li>
-                <li>Intentional lunch</li>
-                <li>High-end sit-down dinner</li>
-                <li>Evening connection and slumber-party-style gathering</li>
-              </ul>
-            </div>
-            <div className="flow-day">
-              <h3>Sunday</h3>
-              <ul>
-                <li>Grounded integration</li>
-                <li>Closing ceremony</li>
-                <li>Departure by midday for non-housing guests</li>
-              </ul>
-              <div className="sunday-evening">
-                <h4>Sunday Evening <span className="optional-label">(Housing Guests)</span></h4>
-                <p>Unstructured rest, connecting, and integration time with free use of pool, hot tub, and all common areas.</p>
-              </div>
+            <div className="spine-stage">
+              <h4>Play</h4>
+              <p>Exploring curiosity, embodiment, and rediscovery without shame or rigidity.</p>
             </div>
           </div>
-          <div className="flow-images">
+          <p>For many women leaving high-demand systems or rigid identities, these are the first two doors that begin opening again.</p>
+          <p className="emphasis-line">The return to self-trust and the rediscovery of aliveness in the body.</p>
+
+          <h3 className="why-heading">Why This Matters</h3>
+          <p>Many women who come to this work are navigating seasons of transition.</p>
+          <ul className="transition-list">
+            <li>Leaving high-demand religion</li>
+            <li>Divorce or relationship shifts</li>
+            <li>Motherhood and rediscovering themselves again</li>
+            <li>Midlife awakenings</li>
+            <li>Career changes</li>
+            <li>The quiet realization that the life they built no longer fits the person they&rsquo;re becoming</li>
+          </ul>
+          <p>This retreat is designed to hold space for that in-between.</p>
+          <p className="emphasis-line">Not rushing toward answers.</p>
+          <p>But allowing curiosity, embodiment, connection, and community to guide the process.</p>
+        </div>
+      </section>
+
+      {/* Guest Facilitator */}
+      <section className="retreat-facilitator">
+        <div className="container content-container">
+          <div className="facilitator-content">
+            <h2>Guest Facilitator: Dr. Somer Nicole</h2>
+            <p>
+              Dr. Somer Nicole is a Sensual Somatic Therapist, Nervous System Educator, and S Factor Teacher with over 20 years of experience bridging science and soul. A Doctor of Physical Therapy, she specializes in restoring physiological safety, embodied presence, and the reclamation of personal power. Embodying the Somatic Dominatrix, her work merges nervous system science, somatic ritual, and feminine embodiment, guiding clients to meet resistance, reclaim instinct, and transmute fear into vitality while integrating both shadow and light as sacred expressions of wholeness.
+            </p>
+            <div className="sfactor-note">
+              <h3>What is S Factor?</h3>
+              <p>
+                S Factor is a sensual movement practice designed to reconnect women to their bodies, their instinct, and their life-force energy through embodied movement.
+              </p>
+              <p className="emphasis-line">It is not choreography or performance.</p>
+              <p>
+                It is an invitation to listen to the body and allow movement to become a pathway back to presence, pleasure, and personal power.
+              </p>
+            </div>
+          </div>
+          <div className="facilitator-images">
             <Image
               src="/images/retreat-gathering.jpeg"
               alt="Spacious gathering area with comfortable seating"
@@ -215,9 +268,9 @@ export default function EventsPage() {
                 <p className="deposit-amount">$500 non-refundable deposit to reserve your spot</p>
               </div>
               <ul className="deposit-details">
-                <li>All balances must be paid in full by <strong>April 1, 2026</strong></li>
+                <li>All balances must be paid in full by <strong>April 10, 2026</strong></li>
               </ul>
-              <p className="payment-plan-note">*$1,350 if paid via payment plan ($500 deposit + $850 remaining balance)</p>
+              <p className="payment-plan-note">*$1,450 if paid via payment plan ($500 deposit required)</p>
             </div>
 
             <div className="accommodation-card">
@@ -630,108 +683,204 @@ export default function EventsPage() {
           margin-bottom: 0.5rem;
         }
 
-        /* Retreat Flow */
-        .retreat-flow {
+        /* Framework */
+        .retreat-framework {
           background: var(--neutral-soft-white);
           padding: 5rem 0;
         }
 
-        .retreat-flow h2 {
+        .retreat-framework h2 {
           text-align: center;
           font-size: clamp(2rem, 4vw, 3rem);
-          margin-bottom: 3rem;
+          margin-bottom: 2rem;
         }
 
-        .flow-grid {
+        .retreat-framework > div > p {
+          font-size: 1.15rem;
+          line-height: 1.8;
+          color: var(--neutral-charcoal);
+          max-width: 700px;
+          margin: 0 auto 1.25rem;
+          text-align: center;
+        }
+
+        .framework-separations,
+        .framework-connections {
+          max-width: 700px;
+          margin: 1.5rem auto;
+          text-align: center;
+        }
+
+        .framework-separations p,
+        .framework-connections p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: var(--neutral-charcoal);
+          margin-bottom: 0.5rem;
+        }
+
+        .energy-list {
+          list-style: none;
+          padding: 0;
+          max-width: 300px;
+          margin: 1.5rem auto 2rem;
+          text-align: center;
+        }
+
+        .energy-list li {
+          padding: 0.5rem 0;
+          font-size: 1.15rem;
+          font-weight: 500;
+          color: var(--primary-burgundy);
+        }
+
+        .spine-heading,
+        .why-heading {
+          text-align: center;
+          font-size: 1.75rem;
+          color: var(--primary-burgundy);
+          margin: 3rem 0 1.5rem;
+        }
+
+        .spine-list {
+          list-style: none;
+          padding: 0;
+          max-width: 300px;
+          margin: 1.5rem auto 2rem;
+          text-align: center;
+        }
+
+        .spine-list li {
+          padding: 0.5rem 0;
+          font-size: 1.15rem;
+          color: var(--neutral-charcoal);
+        }
+
+        .spine-list li strong {
+          color: var(--primary-burgundy);
+          font-size: 1.25rem;
+        }
+
+        .spine-focus {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 1fr 1fr;
           gap: 2rem;
-          max-width: 900px;
-          margin: 0 auto;
+          max-width: 700px;
+          margin: 2rem auto;
         }
 
-        .flow-day {
+        .spine-stage {
           background: var(--neutral-cream);
           padding: 2rem;
           border-radius: 0.75rem;
           border-top: 3px solid var(--accent-terracotta);
+          text-align: center;
         }
 
-        .flow-day h3 {
+        .spine-stage h4 {
+          font-size: 1.25rem;
+          color: var(--primary-burgundy);
+          margin-bottom: 0.75rem;
+        }
+
+        .spine-stage p {
+          font-size: 1.05rem;
+          line-height: 1.7;
+          color: var(--neutral-charcoal);
+          margin: 0;
+        }
+
+        .transition-list {
+          list-style: none;
+          padding: 0;
+          max-width: 550px;
+          margin: 1.5rem auto 2rem;
+        }
+
+        .transition-list li {
+          padding: 0.6rem 0;
+          padding-left: 2rem;
+          position: relative;
+          font-size: 1.1rem;
+          color: var(--neutral-charcoal);
+          line-height: 1.6;
+        }
+
+        .transition-list li::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          color: var(--accent-terracotta);
+          font-size: 1.5rem;
+          line-height: 1;
+        }
+
+        @media (max-width: 768px) {
+          .spine-focus {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        /* Guest Facilitator */
+        .retreat-facilitator {
+          background: var(--neutral-cream);
+          padding: 5rem 0;
+        }
+
+        .retreat-facilitator h2 {
+          font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+
+        .facilitator-content {
+          max-width: 700px;
+          margin: 0 auto 2.5rem;
+        }
+
+        .facilitator-content > p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: var(--neutral-charcoal);
+          margin-bottom: 1.25rem;
+        }
+
+        .sfactor-note {
+          background: white;
+          padding: 2rem 2.5rem;
+          border-radius: 0.75rem;
+          border-top: 3px solid var(--accent-terracotta);
+          margin-top: 2rem;
+        }
+
+        .sfactor-note h3 {
           font-size: 1.35rem;
           color: var(--primary-burgundy);
           margin-bottom: 1rem;
+          text-align: center;
         }
 
-        .flow-day p {
+        .sfactor-note p {
           font-size: 1.05rem;
           line-height: 1.7;
           color: var(--neutral-charcoal);
           margin-bottom: 0.75rem;
         }
 
-        .flow-day ul {
-          list-style: none;
-          padding: 0;
+        .sfactor-note p:last-child {
+          margin-bottom: 0;
         }
 
-        .flow-day ul li {
-          padding: 0.5rem 0;
-          padding-left: 1.5rem;
-          position: relative;
-          font-size: 1.05rem;
-          color: var(--neutral-charcoal);
-          line-height: 1.6;
-        }
-
-        .flow-day ul li::before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: var(--accent-terracotta);
-          font-size: 1.25rem;
-          line-height: 1;
-        }
-
-        .sunday-evening {
-          margin-top: 1.25rem;
-          padding-top: 1rem;
-          border-top: 1px dashed var(--secondary-taupe);
-        }
-
-        .sunday-evening h4 {
-          font-size: 1.1rem;
-          color: var(--primary-burgundy);
-          margin-bottom: 0.5rem;
-        }
-
-        .optional-label {
-          font-size: 0.85rem;
-          font-weight: 400;
-          color: var(--neutral-warm-gray);
-          font-style: italic;
-        }
-
-        .sunday-evening p {
-          font-size: 0.95rem;
-          line-height: 1.6;
-          color: var(--neutral-charcoal);
-          margin: 0;
-        }
-
-        .flow-images {
+        .facilitator-images {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 2rem;
           max-width: 900px;
-          margin: 3rem auto 0;
+          margin: 0 auto;
         }
 
         @media (max-width: 768px) {
-          .flow-grid {
-            grid-template-columns: 1fr;
-          }
-          .flow-images {
+          .facilitator-images {
             grid-template-columns: 1fr;
           }
         }

@@ -133,7 +133,7 @@ export default function EventRegisterPage() {
               <ul>
                 <li><strong>Pay in Full:</strong> $1,250</li>
                 <li><strong>Deposit:</strong> $500 to reserve your spot</li>
-                <li><strong>Remaining Balance:</strong> $850 due by April 1, 2026</li>
+                <li><strong>Remaining Balance:</strong> $950 due by April 10, 2026</li>
                 <li>On-site housing available as add-on</li>
                 <li>All payments are non-refundable</li>
               </ul>
@@ -234,7 +234,7 @@ export default function EventRegisterPage() {
                   <div className="payment-option-content">
                     <span className="payment-option-title">$500 Deposit</span>
                     <span className="payment-option-desc">
-                      Reserve your spot now. Remaining $850 due by April 1, 2026.
+                      Reserve your spot now. Remaining $950 due by April 10, 2026.
                     </span>
                   </div>
                 </label>
