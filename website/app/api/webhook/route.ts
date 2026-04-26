@@ -1,6 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { Resend } from 'resend';
+import { sendContract } from '@/lib/signwell';
+import {
+  sendCalendlyEmail,
+  notifyKimberlyNewBooking,
+  notifyKimberlyContractSent,
+} from '@/lib/emails';
 
 function getStripe() {
   return new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -41,70 +47,80 @@ export async function POST(req: NextRequest) {
     const session = event.data.object as Stripe.Checkout.Session;
     const metadata = session.metadata || {};
 
-    // Handle Curiosity Call payments
+    // ─────────────────────────────────────────────
+    // CURIOSITY CALL — Path A (new client)
+    // ─────────────────────────────────────────────
     if (metadata.type === 'curiosity-call') {
       const name = metadata.name || 'Guest';
       const email = metadata.email || session.customer_email || '';
-      const calendlyUrl = 'https://calendly.com/kimberlymmbryant/that-deeper-feeling';
 
-      // Email to client with Calendly link
       if (email) {
-        try {
-          await resend.emails.send({
-            from: 'That Deeper Feeling <noreply@thatdeeperfeeling.com>',
-            to: email,
-            subject: 'Your Curiosity Call — Schedule Your Session',
-            html: `
-              <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #2d2d2d;">
-                <div style="background: linear-gradient(135deg, #8B3A47 0%, #6B2D3E 100%); padding: 2rem; text-align: center; border-radius: 8px 8px 0 0;">
-                  <h1 style="color: #FAF8F5; font-size: 1.75rem; margin: 0;">Your Curiosity Call</h1>
-                  <p style="color: #F5EDE3; margin: 0.5rem 0 0; font-style: italic;">That Deeper Feeling</p>
-                </div>
-                <div style="padding: 2rem; background: #FAF8F5; border-radius: 0 0 8px 8px;">
-                  <p>Dear ${name},</p>
-                  <p>Thank you for taking this step. Your payment of <strong>$125</strong> has been received.</p>
-                  <p>Your next step is to choose a time that works for you:</p>
-                  <div style="text-align: center; margin: 2rem 0;">
-                    <a href="${calendlyUrl}" style="display: inline-block; background: #8B3A47; color: #FAF8F5; padding: 1rem 2.5rem; border-radius: 6px; text-decoration: none; font-size: 1.1rem; font-weight: 600;">Schedule Your Curiosity Call</a>
-                  </div>
-                  <p style="background: #F5EDE3; padding: 1rem; border-radius: 6px; border-left: 3px solid #C4956A;">This is a 60-minute conversation. Come as you are. There is nothing to prepare, no right answers, and no pressure.</p>
-                  <p>This $125 investment is applied toward any container you choose to step into.</p>
-                  <p style="margin-top: 2rem;">With warmth,<br /><strong>Kimberly Bryant</strong><br /><em>That Deeper Feeling</em></p>
-                </div>
-              </div>
-            `,
-          });
-        } catch (emailErr) {
-          console.error('Failed to send curiosity call confirmation email:', emailErr);
-        }
-      }
+        // Send contract via SignWell
+        const result = await sendContract(
+          { name, email },
+          { type: 'curiosity-call', name, email },
+        );
 
-      // Notify Kimberly
-      try {
-        await resend.emails.send({
-          from: 'That Deeper Feeling <noreply@thatdeeperfeeling.com>',
-          to: process.env.KIMBERLY_EMAIL || 'kimberly@thatdeeperfeeling.com',
-          subject: `New Curiosity Call Booking: ${name}`,
-          html: `
-            <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #2d2d2d;">
-              <h2 style="color: #8B3A47;">New Curiosity Call Booking</h2>
-              <table style="width: 100%; margin: 1rem 0; border-collapse: collapse;">
-                <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Name:</strong></td><td style="padding: 0.5rem 0;">${name}</td></tr>
-                <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Email:</strong></td><td style="padding: 0.5rem 0;"><a href="mailto:${email}">${email}</a></td></tr>
-                <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Payment:</strong></td><td style="padding: 0.5rem 0;">$125.00</td></tr>
-              </table>
-              <p>They have been sent the Calendly link to schedule their session.</p>
-            </div>
-          `,
-        });
-      } catch (emailErr) {
-        console.error('Failed to send Kimberly curiosity call notification:', emailErr);
+        if (result.mock) {
+          // Mock mode: no real contract — send Calendly email immediately
+          // (preserves current behavior when SignWell isn't configured)
+          await sendCalendlyEmail(name, email, 'curiosity-call');
+        } else if (result.success) {
+          // Live mode: contract sent — Calendly email will be triggered
+          // by the /api/contract-signed webhook after client signs
+          await notifyKimberlyContractSent(name, email, 'curiosity-call');
+        } else {
+          // SignWell failed — fall back to sending Calendly directly
+          console.error('[webhook] SignWell failed, falling back to direct Calendly send');
+          await sendCalendlyEmail(name, email, 'curiosity-call');
+        }
+
+        // Notify Kimberly of the booking
+        await notifyKimberlyNewBooking(name, email, 'curiosity-call', '$125.00');
       }
 
       return NextResponse.json({ received: true });
     }
 
-    // Handle Retreat registrations
+    // ────────────────────────��────────────────────
+    // SESSION BOOKING — Path B (returning client)
+    // ─────���──────���────────────────────────────────
+    if (metadata.type === 'session') {
+      const name = metadata.name || 'Guest';
+      const email = metadata.email || session.customer_email || '';
+      const amount = session.amount_total
+        ? `$${(session.amount_total / 100).toFixed(2)}`
+        : '$500.00';
+
+      if (email) {
+        // Send contract via SignWell
+        const result = await sendContract(
+          { name, email },
+          { type: 'session', name, email },
+        );
+
+        if (result.mock) {
+          // Mock mode: send Calendly email immediately
+          await sendCalendlyEmail(name, email, 'session');
+        } else if (result.success) {
+          // Live mode: Calendly email sent after client signs
+          await notifyKimberlyContractSent(name, email, 'session');
+        } else {
+          // SignWell failed — fall back
+          console.error('[webhook] SignWell failed, falling back to direct Calendly send');
+          await sendCalendlyEmail(name, email, 'session');
+        }
+
+        // Notify Kimberly
+        await notifyKimberlyNewBooking(name, email, 'session', amount);
+      }
+
+      return NextResponse.json({ received: true });
+    }
+
+    // ──────────────────��──────────────────────────
+    // RETREAT REGISTRATION (unchanged)
+    // ─────────────────────────────────────────────
     const name = metadata.name || 'Guest';
     const email = metadata.email || session.customer_email || '';
     const phone = metadata.phone || '';
