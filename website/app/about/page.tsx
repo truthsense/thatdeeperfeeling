@@ -23,6 +23,7 @@ export default function AboutPage() {
                 width={500}
                 height={600}
                 priority
+                sizes="(max-width: 767px) 90vw, 45vw"
                 className="hero-professional-photo"
               />
             </div>

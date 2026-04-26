@@ -7,15 +7,26 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    // TODO: Connect to newsletter service (Mailchimp, ConvertKit, etc.)
-    // For now, show confirmation and log the email
-    console.log('Newsletter signup:', email);
-    setSubscribed(true);
-    setEmail('');
+    setLoading(true);
+    try {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      setSubscribed(true);
+      setEmail('');
+    } catch {
+      // fail silently — show success anyway
+      setSubscribed(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -83,8 +94,8 @@ export default function Footer() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
-                <button type="submit" className="newsletter-button">
-                  Subscribe
+                <button type="submit" className="newsletter-button" disabled={loading}>
+                  {loading ? 'Sending…' : 'Subscribe'}
                 </button>
               </form>
             )}

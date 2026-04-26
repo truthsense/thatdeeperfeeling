@@ -1,9 +1,30 @@
 'use client';
 
+import { useState } from 'react';
 import Button from '@/components/ui/Button';
+import AnimateOnScroll from '@/components/ui/AnimateOnScroll';
 import Image from 'next/image';
 
 export default function Home() {
+  const [stayEmail, setStayEmail] = useState('');
+  const [stayName, setStayName] = useState('');
+  const [stayDone, setStayDone] = useState(false);
+  const [stayLoading, setStayLoading] = useState(false);
+
+  async function handleStaySubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setStayLoading(true);
+    try {
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: stayName, email: stayEmail }),
+      });
+    } catch { /* fail silently */ }
+    setStayDone(true);
+    setStayLoading(false);
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -48,6 +69,7 @@ export default function Home() {
                 width={500}
                 height={600}
                 priority
+                sizes="(max-width: 767px) 90vw, 45vw"
                 className="hero-photo"
               />
             </div>
@@ -58,14 +80,16 @@ export default function Home() {
       {/* Who This Is For */}
       <section className="section-who">
         <div className="container content-container">
-          <h2 className="section-title">This work may be for you if&hellip;</h2>
-          <ul className="who-list">
-            <li>You&rsquo;re deconstructing something you once gave your life to</li>
-            <li>You&rsquo;re tired of handing your safety, worth, or authority to someone else</li>
-            <li>You feel disconnected from your desire, your voice, or your inner truth</li>
-            <li>You&rsquo;re curious about intimacy, power, and presence beyond shame or performance</li>
-            <li>You&rsquo;re ready for depth, honesty, and embodied exploration</li>
-          </ul>
+          <AnimateOnScroll>
+            <h2 className="section-title">This work may be for you if&hellip;</h2>
+            <ul className="who-list">
+              <li>You&rsquo;re deconstructing something you once gave your life to</li>
+              <li>You&rsquo;re tired of handing your safety, worth, or authority to someone else</li>
+              <li>You feel disconnected from your desire, your voice, or your inner truth</li>
+              <li>You&rsquo;re curious about intimacy, power, and presence beyond shame or performance</li>
+              <li>You&rsquo;re ready for depth, honesty, and embodied exploration</li>
+            </ul>
+          </AnimateOnScroll>
         </div>
       </section>
 
@@ -96,55 +120,51 @@ export default function Home() {
       {/* Approach */}
       <section className="section-approach">
         <div className="container content-container">
-          <p className="approach-intro">
-            This work is rooted in consent-centered, body-led practices that honor nervous system awareness, pacing, and choice.
-          </p>
-          <p className="approach-statement">
-            We slow down, move with awareness, and allow authority to be reclaimed from the inside out.
-          </p>
+          <AnimateOnScroll>
+            <p className="approach-intro">
+              This work is rooted in consent-centered, body-led practices that honor nervous system awareness, pacing, and choice.
+            </p>
+            <p className="approach-statement">
+              We slow down, move with awareness, and allow authority to be reclaimed from the inside out.
+            </p>
+          </AnimateOnScroll>
         </div>
       </section>
 
       {/* Containers Overview */}
       <section className="section-containers">
         <div className="container content-container">
-          <h2 className="containers-title">Ways We Can Work Together</h2>
+          <AnimateOnScroll>
+            <h2 className="containers-title">Ways We Can Work Together</h2>
+          </AnimateOnScroll>
 
-          <div className="container-card">
-            <div className="container-header">
-              <h4>Return to Power</h4>
+          <AnimateOnScroll delay={100}>
+            <div className="container-card">
+              <div className="container-header"><h4>Return to Power</h4></div>
+              <p className="container-description">A six month private container for rebuilding self trust, desire, and embodied authority from the inside out.</p>
             </div>
-            <p className="container-description">
-              A six month private container for rebuilding self trust, desire, and embodied authority from the inside out.
-            </p>
-          </div>
+          </AnimateOnScroll>
 
-          <div className="container-card">
-            <div className="container-header">
-              <h4>Edgewalker</h4>
+          <AnimateOnScroll delay={150}>
+            <div className="container-card">
+              <div className="container-header"><h4>Edgewalker</h4></div>
+              <p className="container-description">A three month private journey for those ready to explore power, intimacy, and identity at the edge of growth.</p>
             </div>
-            <p className="container-description">
-              A three month private journey for those ready to explore power, intimacy, and identity at the edge of growth.
-            </p>
-          </div>
+          </AnimateOnScroll>
 
-          <div className="container-card">
-            <div className="container-header">
-              <h4>Sacred Eruption</h4>
+          <AnimateOnScroll delay={200}>
+            <div className="container-card">
+              <div className="container-header"><h4>Sacred Eruption</h4></div>
+              <p className="container-description">A single deep dive immersion for focused, embodied breakthrough work.</p>
             </div>
-            <p className="container-description">
-              A single deep dive immersion for focused, embodied breakthrough work.
-            </p>
-          </div>
+          </AnimateOnScroll>
 
-          <div className="container-card">
-            <div className="container-header">
-              <h4>Reclaiming the Forbidden</h4>
+          <AnimateOnScroll delay={250}>
+            <div className="container-card">
+              <div className="container-header"><h4>Reclaiming the Forbidden</h4></div>
+              <p className="container-description">In person workshops, retreats, and gatherings where we explore voice, desire, and power in real time.</p>
             </div>
-            <p className="container-description">
-              In person workshops, retreats, and gatherings where we explore voice, desire, and power in real time.
-            </p>
-          </div>
+          </AnimateOnScroll>
 
           <div className="containers-closing">
             <p>Rooted in choice.</p>
@@ -154,19 +174,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stay Connected — Email Capture */}
+      <section className="section-stay">
+        <div className="container content-container">
+          <AnimateOnScroll>
+            <span className="eyebrow">Stay Close</span>
+            <h2 className="stay-heading">Not ready yet?</h2>
+            <p className="stay-subhead">
+              Receive invitations, insights, and resources for deepening your journey — in your own time.
+            </p>
+            {stayDone ? (
+              <p className="stay-success">You&rsquo;re in. Welcome.</p>
+            ) : (
+              <form className="stay-form" onSubmit={handleStaySubmit}>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  className="stay-input"
+                  value={stayName}
+                  onChange={(e) => setStayName(e.target.value)}
+                  aria-label="Your name"
+                />
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="stay-input"
+                  value={stayEmail}
+                  onChange={(e) => setStayEmail(e.target.value)}
+                  required
+                  aria-label="Your email address"
+                />
+                <button type="submit" className="stay-button" disabled={stayLoading}>
+                  {stayLoading ? 'Sending…' : 'Stay Connected'}
+                </button>
+              </form>
+            )}
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="section-final-cta">
         <div className="container content-container centered">
-          <h2>Not sure where to begin?</h2>
-          <p className="final-cta-text">
-            Every journey starts with a Curiosity Call.
-          </p>
-          <p className="final-cta-subtext">
-            A slow, intentional space to get curious and feel what&rsquo;s true.
-          </p>
-          <Button href="/consult" variant="primary">
-            Book Your Curiosity Call
-          </Button>
+          <AnimateOnScroll>
+            <h2>Not sure where to begin?</h2>
+            <p className="final-cta-text">
+              Every journey starts with a Curiosity Call.
+            </p>
+            <p className="final-cta-subtext">
+              A slow, intentional space to get curious and feel what&rsquo;s true.
+            </p>
+            <Button href="/consult" variant="primary">
+              Book Your Curiosity Call
+            </Button>
+          </AnimateOnScroll>
         </div>
       </section>
 
@@ -452,6 +513,88 @@ export default function Home() {
           color: var(--neutral-warm-gray);
           font-style: italic;
           margin-bottom: 0.25rem;
+        }
+
+        /* Stay Connected */
+        .section-stay {
+          background: linear-gradient(135deg, var(--primary-burgundy) 0%, var(--primary-wine) 100%);
+          padding: 5rem 0;
+          text-align: center;
+        }
+
+        .stay-heading {
+          font-size: clamp(2rem, 4vw, 3rem);
+          color: var(--neutral-soft-white);
+          margin-bottom: 1rem;
+        }
+
+        .stay-subhead {
+          font-size: 1.1rem;
+          color: var(--neutral-cream);
+          font-style: italic;
+          line-height: 1.7;
+          margin-bottom: 2rem;
+          max-width: 500px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .stay-form {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          max-width: 380px;
+          margin: 0 auto;
+        }
+
+        .stay-input {
+          padding: 0.85rem 1.25rem;
+          border: 1px solid rgba(255,255,255,0.3);
+          border-radius: 0.5rem;
+          font-family: var(--font-body);
+          font-size: 1rem;
+          background: rgba(255,255,255,0.12);
+          color: var(--neutral-soft-white);
+          backdrop-filter: blur(4px);
+        }
+
+        .stay-input::placeholder {
+          color: rgba(255,255,255,0.6);
+        }
+
+        .stay-input:focus {
+          outline: none;
+          border-color: var(--accent-terracotta);
+          background: rgba(255,255,255,0.18);
+        }
+
+        .stay-button {
+          padding: 0.9rem 1.5rem;
+          background: var(--accent-terracotta);
+          color: var(--neutral-soft-white);
+          border: none;
+          border-radius: 0.5rem;
+          font-family: var(--font-body);
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.2s, transform 0.15s;
+        }
+
+        .stay-button:hover:not(:disabled) {
+          background: var(--accent-coral);
+          transform: translateY(-2px);
+        }
+
+        .stay-button:disabled {
+          opacity: 0.7;
+          cursor: not-allowed;
+        }
+
+        .stay-success {
+          font-size: 1.2rem;
+          color: var(--neutral-cream);
+          font-style: italic;
         }
 
         /* Final CTA */

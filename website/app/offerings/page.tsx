@@ -107,6 +107,7 @@ export default function OfferingsPage() {
                 {offering.badge && <div className="badge">{offering.badge}</div>}
                 <h2>{offering.title}</h2>
                 <p className="duration">{offering.duration}</p>
+                <p className="price">{offering.price}</p>
                 <p className="tagline">{offering.tagline}</p>
                 <p className="description">{offering.description}</p>
 
@@ -116,7 +117,7 @@ export default function OfferingsPage() {
                 </div>
 
                 <div className="features">
-                  <h4>What's Included:</h4>
+                  <h4>What&apos;s Included:</h4>
                   <ul>
                     {offering.features.map((feature, i) => (
                       <li key={i}>{feature}</li>
@@ -124,7 +125,6 @@ export default function OfferingsPage() {
                   </ul>
                 </div>
 
-                <p className="price">{offering.price}</p>
                 <Button href={`/offerings/${offering.slug}`} variant="primary" fullWidth>
                   Learn More
                 </Button>

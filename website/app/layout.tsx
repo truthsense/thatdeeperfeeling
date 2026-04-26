@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import PageTransition from "@/components/ui/PageTransition";
 
 export const metadata: Metadata = {
   title: "That Deeper Feeling | Conscious Intimacy Coaching by Kimberly Bryant",
@@ -11,10 +12,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "That Deeper Feeling | Conscious Intimacy Coaching",
     description: "Transform your relationship with intimacy, power, and pleasure through conscious kink coaching.",
-    url: "https://thatdeeperfeeling.com",
+    url: "https://www.thatdeeperfeeling.com",
     siteName: "That Deeper Feeling",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://www.thatdeeperfeeling.com/images/kimberly-hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kimberly Bryant — That Deeper Feeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "That Deeper Feeling | Conscious Intimacy Coaching",
+    description: "Transform your relationship with intimacy, power, and pleasure through conscious kink coaching.",
+    images: ["https://www.thatdeeperfeeling.com/images/kimberly-hero.jpg"],
   },
 };
 
@@ -36,7 +51,9 @@ export default function RootLayout({
       </head>
       <body>
         <Navigation />
-        <main>{children}</main>
+        <main>
+          <PageTransition>{children}</PageTransition>
+        </main>
         <Footer />
       </body>
     </html>
