@@ -101,7 +101,7 @@ export async function notifyKimberlyContractSent(
             <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Email:</strong></td><td style="padding: 0.5rem 0;"><a href="mailto:${clientEmail}">${clientEmail}</a></td></tr>
             <tr><td style="padding: 0.5rem 0; color: #888;"><strong>Type:</strong></td><td style="padding: 0.5rem 0;">${label}</td></tr>
           </table>
-          <p>The participant agreement has been sent via SignWell. Once they sign, they will automatically receive the scheduling link.</p>
+          <p>The participant agreement has been sent via Docuseal. Once they sign, they will automatically receive the scheduling link.</p>
         </div>
       `,
     });
